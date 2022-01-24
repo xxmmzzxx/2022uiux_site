@@ -1,23 +1,59 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  
-        
+    <link rel="stylesheet" href="./css/reset.css">
     <style>
-        *{margin:0px;padding: 0px;box-sizing: border-box;}
-            li{list-style: none;}
-            a:link,a:visited{color: white;text-decoration:none;}
-            .clearfix:after{content: "";display: block;clear:both;}
+        .topNavWrap{background: #0044AF;}
+        .navTop{
+            width: 1200px;margin:0 auto;
+        
+        display: flex; justify-content:space-between;}
+        .nav ul{display: flex;height: 40px;}
+        .nav li {background: #00163B;margin-right: 2px;}
+        .nav a{display: flex;
+        justify-content: center;align-items: center;height: 100%;
+    padding: 0 20px;font-size: 14px;}
+    .navTop>.nav ul>li>a:hover, .nav ul>li>a:active{background:white; color:#00163B;}
+        .utilMenu ul{display: flex;height: 40px;}
+       .box{display:flex;}
+       .m{width: 16px;height: 16px;background;}
 
-       
-     
-    </>
+        .utilMenu a{ display: flex;justify-content: center; align-items: center;
+        height: 100%;padding: 0 10px; font-size: 14px;}
+
+    </style>
 </head>
 <body>
-  
+    <div class="topNavWrap">
+        <div class="navTop">
+            <div class="nav">
+                <ul>
+                    <li><a href="#">대학교</a></li>
+                    <li><a href="#">입학안내</a></li>
+                    <li><a href="#">대학원</a></li>
+                </ul>
+            </div>
+        
+    
+    <div class="utilMenu">
+        <ul>
+            <li><a href="#">글자크기</a></li>
+                <div class="box">
+                    <li><a href="#" class="m">- </a></li>
+                    <li><a href="#" class="p">+</a></li>
+                </div>
+            <li><a href="#">찾아오시는길</a></li>
+            <li><a href="#">ENGLISH</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </ul>
+    </div>
+    </div>
+</div>
 </body>
-</html> 
+
+
+</html>
