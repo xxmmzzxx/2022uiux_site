@@ -19,17 +19,25 @@
     padding: 0 20px;font-size: 14px;}
     .navTop>.nav ul>li>a:hover, .nav ul>li>a:active{background:white; color:#00163B;}
         .utilMenu ul{display: flex;height: 40px;}
-       .box{display:flex; }
+
+       .box{display:flex; justify-content: center;align-items: center;  }
+       .box>li{height: 16px;width: 16px; margin-right: 2px;
+        text-align: center; 
+        background: #fff;}
+        .box>li>a{color:#000; margin-left: -2px;text-align: center;}
+
 
         .utilMenu a{ display: flex;justify-content: center; align-items: center;
         height: 100%;padding: 0 10px; font-size: 14px;}
 
-        .logo{
-            width: 1200px;margin: 0 auto;
-        
-        }
-        .logo>h1>a{display: block;line-height}
-        
+        .container{width: 1200px; display: flex;justify-content: space-between;margin: 0 auto;}
+        h1{position: absolute;left:-1000px;}
+        .navf{display: flex;justify-content: center; align-items: center;}
+        .container>nav ul{display: flex;}
+        .container>nav ul li>a{color: #000;margin-right: 50px;line-height: 120px;}
+
+        .container>img{width: 200px;height: 114px;padding:10px;}
+
 
 
     </style>
@@ -62,9 +70,29 @@
     </div>
     </div>
 </div>
-<div class="logo">
-<h1><a href="#"><img src="images/CAU_symbol.png" alt=""></a></h1>
+<div class="container">
+    <h1>중앙대</h1>
+        <img src="images/CAU_symbol.png" alt=""></h1>
+        <nav class="navf">
+            <ul class="nav_1">
+                <li><a href="#">대학소개</a></li>
+                <li><a href="#">학과소개</a></li>
+                <li><a href="#">학사안내</a></li>
+                <li><a href="#">대학생활</a></li>
+                <li><a href="#">학생지원센터</a></li>
+            </ul>
+            <div class="ham">
+                <img src="images/햄버거.jpg" alt="">
+                <img src="images/햄버거02.jpg" alt="">
+            </div>
+
+ 
+    </nav>
+        
+    
+</h1>
 </div>
+
 </body>
 </header>
 
