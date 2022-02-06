@@ -1,0 +1,5 @@
+@charset "utf-8";
+.wrap{width: 1200px; margin: 0 auto;}
+.nextBtn,.prevBtn{position: absolute;top:50%;
+margin-top: - 50px;}
+.nextBtn{}
