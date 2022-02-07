@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
     <style>
         .topNavWrap{background: #0044AF;}
         .navTop{
@@ -36,12 +40,15 @@
         .container>nav ul{display: flex;}
         .container>nav ul li>a{color: #000;margin-right: 50px;line-height: 120px;}
         .container>img{width: 200px;height: 114px;padding:10px;}
-        .titleWrap{display: flex; justify-content: space-between;;height: 140px;align-items:center;}
+        .titleWrap{display: flex; justify-content: space-between;height: 140px;align-items:center;}
         .title{color:white;}
         .cardbox ul{display: flex;}
+        .cardbox ul li {padding: 10px;}
+        .cardbox ul li p {display:block;text-align: center;color:white;}
 
-    header{height: 160px;}
+    .header{height: 160px;}
     section.section{
+       
         background: skyblue;
         background-image: url(images/dott.png),url(images/cau.jpg);
         background-repeat: repeat,no-repeat;
@@ -49,15 +56,15 @@
         background-size:auto,cover;
         
     }
+    
 
 
-    /* section  */
 
-     
-        
-        
 
+
+      
     </style>
+   
 </head>
 
 <body>
@@ -119,18 +126,36 @@
         </div>
         <div class="cardbox"> 
             
-            <ul>
-               <li><a href="#">입학절차 <img src="images/1.png" alt=""></a></li>
-               <li><a href="#">입학절차 <img src="images/1.png" alt=""></a></li>
-               <li><a href="#">입학절차 <img src="images/1.png" alt=""></a></li>
-               <li><a href="#">입학절차 <img src="images/1.png" alt=""></a></li>
+            <ul class="card">
+               <li>
+                 <img src="images/1.png" alt="">
+                 <p>입학절차</p>
+               </li>
+               <li>
+                 <img src="images/1.png" alt="">
+                 <p>입학절차</p>
+               </li>
+               <li>
+                 <img src="images/1.png" alt="">
+                 <p>입학절차</p>
+               </li>
+               <li>
+                 <img src="images/1.png" alt="">
+                 <p>입학절차</p>
+               </li>
             </ul>
            </div>
 
         </div>
     </div>
-</section>
+    
+    
 
+
+</ul>
+</div>
+
+</section>
 </body>
 
 
