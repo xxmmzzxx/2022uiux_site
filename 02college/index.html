@@ -26,8 +26,8 @@
         .nav li {background: #00163B;margin-right: 2px;}
         .nav a{display: flex;
         justify-content: center;align-items: center;height: 100%;
-    padding: 0 20px;font-size: 16px;}
-    .navTop>.nav ul>li>a:hover, .nav ul>li>a:active{background:white; color:#00163B;}
+        padding: 0 20px;font-size: 16px;}
+        .navTop>.nav ul>li>a:hover, .nav ul>li>a:active{background:white; color:#00163B;}
         .utilMenu ul{display: flex;height: 40px;}
 
        .box{display:flex; justify-content: center;align-items: center;  }
@@ -47,14 +47,13 @@
         .container>nav ul li>a{color: #000;margin-right: 50px;line-height: 120px;font-size: 18px;;}
         .container>img{width:213px;height: 54px;display: block;margin-top:30px;}
         .titleWrap{display: flex; justify-content: space-between;height: 140px;align-items:center;}
-        .title{color:white;font-size:25px;}
+        .title{color:white;font-size:28px;}
         .cardbox ul{display: flex;justify-items: center;}
         .cardbox ul li {padding: 10px;}
-        .cardbox ul li p {display:block;text-align: center;color:white;;}
+        .cardbox ul li p {display:block;text-align: center;color:white;}
 
-    .header{height: 160px;}
-    section.section{
-       
+        .header{height: 160px;}
+         section.section{
         background: skyblue;
         background-image: url(images/dott.png),url(images/cau.jpg);
         background-repeat: repeat,no-repeat;
@@ -80,7 +79,7 @@
             margin-bottom: 0;
         }
         .bx-wrapper .bx-pager{
-            bottom: 30px;
+             bottom: 30px;
         }
         
         .contentWrap>ul>li:nth-child(1) .prev,
@@ -93,26 +92,56 @@
         .contentWrap>ul>li:nth-child(1) .prev{left: 0;}
         .contentWrap>ul>li:nth-child(2) {
             font-size: 38px;}
-        .text{ position:absolute;top:30%;left:10%;font-size: 50px;font-style: italic;font-weight: bold;}
-        .t{position: absolute;top:10%;padding: 19px;}
-        .t1{position: absolute;top:50%;padding: 19px;font-size: 18px;}
+        .text{ position:absolute;top:20%;left:10%;font-size: 58px;font-weight: bold;color:fff;opacity: 80%;}
+        .t{position: absolute;top:10%;padding: 19px;color: #fff;}
+        .t1{position: absolute;top:50%;padding: 19px;font-size: 18px;color:#fff;}
         .btn1{position: absolute;top:75%;left:5%; width: 170px;height: 40px;background:rgba(0, 0,00, 0.5);
              border: 1px solid white;color: #fff;font-size: 15px;} 
+        .btn2{position: absolute;top:75%;left:10%; width: 170px;height: 40px;background:#00163B;
+             color: #fff;font-size: 15px;} 
         .link{font-size: 24px;font-weight: bold;color:#fff;padding:20px;}
         .hlink{color:#fff;display: flex;justify-content: center;}
+        #hotlink .h3 { display: block;font-size: 24px;color: #fff;padding: 20px;}
         .hlink li {padding: 11px;}
         .hlink li p {text-align: center;}
-
-
+        #notice {box-sizing: border-box;margin: 20px;}
+        #notice h3 {font-size: 22px;color: #fff;line-height: 50px;
+            }
+        #notice ul{ color: #fff;
+            border-top: 2px solid #fff;}
+        #notice ul li{line-height: 35px;;font-size: 14px;}
+        #notice ul li span {float:right;}
+        .news {display: block;font-size: 22px; color:#203355;padding:30px 20px 24px;font-weight:bold;}
+        .campus{display: flex; align-items: center;justify-content: space-between;padding:0px 22px;font-size: 14px;}
+        .sns{float: right;padding: 20px;}
+        .tour{width: 300px;height: 51px;position: absolute;bottom:0;text-align: center;
+            background-color: rgba(0, 0,00, 0.7);font-size:20px;
+            ;}
+        .tour span {color: #fff;position: absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
         
        
-
-
-
-
-       
-    
-    </style>
+        
+        
+      /* footer */
+      .foterWrap .footer1 {width: 1200px; margin: 0 auto;}
+      .footerWrap>ul.footer1>li{position: relative;}
+      .footerWrap>ul.footer1>li:after{
+          content: "";width: 1px;height: 11px;display: block;background-color: #ccc;position: absolute;bottom:10px;
+        }
+        .footerWrap>ul.footer1>li:first-child:after{
+            content:"";display: none;
+        }
+        .footerWrap .footer1 li a{display: block;color: #727272;line-height:30px;font-size: 14px;padding: 3px 10px;}
+        .wall{height: 1px;background-color: #c4c4c4;}
+        .footer1{
+            display: flex; align-items: center;justify-content: center;
+        }
+        p{display: flex;justify-content: center;align-items: center;
+            color: #a5a5a5;font-size: 13px;line-height: 20px;padding: 10px;}
+     
+         
+     
+ </style>
 
 <script>
     $(document).ready(function(){
@@ -124,14 +153,17 @@
             $(".prev").click(function(){
                 mySlider.goToPrevSlide()
             });
+            $(document).ready(function(){
+            var mySlider = $(".slider_1").bxSlider({
+            controls:false})
+            });
     });
     
 </script>
 
 </head>
 
-<body>{}
-    <header>
+<body>
     <div class="topNavWrap">
         <div class="navTop">
             <div class="nav">
@@ -188,8 +220,7 @@
             <h3>인류사회에 기여하는</h3>
             <h2> 창의인재, 중앙대학교</h2>
         </div>
-        <div class="cardbox"> 
-            
+        <div class="cardbox">           
             <ul class="card">
                <li>
                  <img src="images/1.png" alt="">
@@ -215,28 +246,35 @@
             <li>
                 <ul class="slider">
                     <li>
-
                         <img src="images/slider1.png" alt="">
 
                         <div class="text">
-                            Open
-                            <br>Your Future.</div>
+                            인류사회에
+                            <br> 기여하는 
+                            <br>창의인재, 중앙</div>
+                            <button class="btn2">자세히 보기▶</button>
                     </li>
                     <li>
 
                         <img src="images/slider2.png" alt="">
 
                         <div class="text">
-                            인류사회에 기여하는 
+                            인류사회에
+                            <br> 기여하는 
                             <br>창의인재, 중앙
-
                         </div>
+                        <button class="btn2">자세히 보기▶</button>
                     </li>
                     <li>
 
                         <img src="images/slider3.png" alt="">
 
-                        <div class="text"></div>
+                        <div class="text">
+                             인류사회에
+                            <br> 기여하는 
+                            <br>창의인재, 중앙
+                        </div>
+                        <button class="btn2">자세히 보기▶</button>
                     </li>
                    
                 </ul>
@@ -253,7 +291,7 @@
             <li>
                 <img src="images/library.png" alt="">
                 <p class="t">
-                <strong>APP</strong>으로<br>스마트도서관<br>바로이용하자<italic>!</italic></p>
+                <strong>APP</strong>으로<br>스마트도서관<br>바로이용하자!</p>
                 <p class="t1">모바일 열람증은<br>
                     도서관 자료실 . 도서대출 등에<br>
                     사용 할 수 있습니다.
@@ -263,12 +301,13 @@
             </li>
             
             <li>
-                <p class="link">HOT LINK</p>
+               <div id="hotlink">
+                <h3 class="h3">HOT LINK</h3>
                 <ul class="hlink">
                        <li>
                            <img src="images/monitor.png" alt="">
                            <p>원격지원
-                               <br>시스템</p>
+                            <br>시스템</p>
                        </li>
                        <li>
                            <img src="images/development.png" alt="">
@@ -276,24 +315,82 @@
                        </li>
                         <li>
                             <img src="images/school.png" alt="">
-                                                   <p>학사정보</p>
+                            <p>학사정보</p>
                         </li>
-                                  </ul>
+                    </ul>
+                </div> 
 
             </li>
             
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
+            <li>
+                <div id="notice">
+                    <h3 class="noti">공지사항</h3>
+                    <ul>
+                        <li><a href="#">[공지]2022 중앙대 신입생...</a><span>2022-02-14</span></li>
+                        <li><a href="#">[공지]AI융합교육 포럼</a><span>2022-02-01</span></li>
+                        <li><a href="#">[공지]2022학년도 장학...</a><span>2022-01-22</span></li>
+                        <li><a href="#">[공지]진로탐색 워크숍</a><span>2022-01-05</span></li>
+                    </ul>
+                    </div>
+            </li>
+            <li>
+                <h3 class="news">SNS NEWS</h3>
+                <div class="campus"> 
+                    <img src="images/campus.png" alt="">
+                    <span>
+                        중앙대학교는<br>
+                        2022학년도 졸업생<br>
+                        학위수여식을 <br>
+                        2월 17일 본교 대신홀<br>
+                        ...
+                    </span>
+                </div>
+                <div class="sns">
+                    <img src="images/facebook.jpg" alt="">
+                    <img src="images/twiiter.jpg" alt="">
+                    <img src="images/google.jpg" alt="">
+                    <img src="images/youtube.jpg" alt="">
+                </div>
+                
+            </li>
+            <li>
+                <div class="tour">
+                    <span>캠퍼스 투어</span>
+                </div>
+            </li>
+            <li>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jTIqieb-y-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </li>
+            <li>
+                <div class="slider_1">
+                    <img src="images/slider_1.png" alt="">
+                    <img src="images/slider_2.png" alt="">
+                    <img src="images/slider_3.png" alt="">
+                    <img src="images/slider_4.png" alt="">
+                </div>
+            </li>
         </ul>
+        
    </div>
   
 
 </section>
+    <footer class="footerWrap">
+        <ul class="footer1">
+            <li><a href="#">사이버감사실</a></li>
+            <li><a href="#">이메일수집거부</a></li>
+            <li><a href="#">대학정보공시</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">예결산공고</a></li>
+            <li><a href="#">채용공고</a></li>
+            <div class="wall"></div>
+        </ul>
+       <p>
+            서울캠퍼스 06974 서울특별시 동작구 흑석로 84 TEL.02.820.5114~6114<br>
+            안성캠퍼스 17546 경기도 안성시 대덕면 서동대로 4726 TEL.031.670.3114~4114<br>
+            Copyright 2018 Chung-Ang University All Rights Reserved.
+        </p>
+        </div>
+</footer>
+
 </body>
-
-
-
 </html>
