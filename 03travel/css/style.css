@@ -1,11 +1,10 @@
 @charset "utf-8";
-       
+
         *{font-family: 'Noto Sans KR', sans-serif;}
 
         /* header  */
         .wrapper{background: #E4EFD1;}
-        header{width: 1200px;margin: 0 auto;height: 85px;line-height: 85px;     
-        }
+        header{width: 1200px;margin: 0 auto;height: 85px;line-height: 85px;}
         nav{display: flex;align-items: center;justify-content:space-between;}
         h1{position: absolute;left: -9999px;}
         .wrap{position: relative;}
@@ -47,6 +46,10 @@
             position: absolute;
             width: 100%;
         }
+        .container{
+            width: 980px;height: 90px;background: skyblue;
+            margin: 0 auto
+        } 
         .gogo{
             font-size: 28px;font-weight: bold; color:#019B75;
         }
@@ -59,7 +62,40 @@
 
         /* main */
        fieldset{border: 0 none;}
-       legend{position: absolute;left: 0;top:-9999px;
-           
-       }
+       legend{position: absolute;left: 0;top:-9999px;}
+
+       .field label {display: block; margin-bottom: 10px;}
+       .formWrap{width: 353px;height: 286px; margin: 0 auto;;}
+       .field select {width: 100%;}
+       .field {margin-bottom: 10px;}
+       /* day  */
+       .field.day{display: flex;justify-content: space-between;}
+       .field.day > div {width:calc(( 100% - 15px ) / 2 );}
+        /* grade */
+       .field.grade{display: flex;justify-content: space-between;}
+       .field.grade > div{width:calc( ( 100% - 15px ) / 2 );}
+       .field.grade .right{display: flex;justify-content: space-between;}
+       .field.grade .right > div{width:calc( ( 100% - 15px ) / 2 );}
+
+       .inp-field{height: 30px;width: 100%; font-size: 16px;text-indent: 8px;
+            color:#c7c7c7; border-radius: 5px; width: 100%;
+            border: 1px solid #c7c7c7;}
+        .inp-field:focus{outline: 3px solid rgba(0,0,0,0.2) ;}
+
+        .btn{
+            display: block;
+            width: 278px;
+            height: 36px;
+            border: 0 none;
+            background: #F4956D;
+            cursor: pointer;
+            font-size: 18px;
+            color:#fff;
+            margin: 0 auto;}
+
+
+
+
+
         
+       
