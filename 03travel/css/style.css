@@ -2,7 +2,7 @@
 
 /* header  */
 .wrapper{background: #E4EFD1;}
-header{width: 989px;margin: 0 auto;height: 85px;line-height: 85px;}
+header{width: 980px;margin: 0 auto;height: 85px;line-height: 85px;}
 nav{display: flex;align-items: center;justify-content:space-between;}
 h1{position: absolute;left: -9999px;}
 .wrap{position: relative;}
@@ -96,7 +96,7 @@ h1{position: absolute;left: -9999px;}
 
 
 /* main */
-main{width: px;margin: 0 auto;}
+main{width: 980px;margin: 0 auto;}
 
 /* bxslide */
 main .bx-wrapper {
@@ -104,34 +104,35 @@ main .bx-wrapper {
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
     border: 0 none;
-    margin-bottom: 0;
-}
-main .top{width: 482px;height: 287px;}
-main .wrapper{float: right; width: 350px;height: 287px;}
-.sliderPager{float: left;width: 132px;height: 286px;}
+    margin-bottom: 0;}
 
+.sliderPager{bottom: 0px;background: #026147;;width: 132px;position:absolute;top:0;}
+.sliderPager .boxPager { display: block;}
+.sliderPager .boxPager a { 
+    display: block;height: 71px;line-height:71px;
+    display: flex;justify-content: center;align-items: center;}
 
-
-
+main .top {width: 482px;height: 287px;position: relative;top: 56px;}
+main .wrapper {float:right; width: 350px;height: 287px; background: #fff;
+             display: flex;justify-content: center;align-items: center;
+            padding: 30px; } 
+main.formwrappe{width: 100%;height: 100%;}
 
 fieldset{border: 0 none;}
-legend{position: absolute;left: 0;top:-9999px;
-
-}
 legend{position: absolute;left: 0;top:-9999px;}
-.field label {display: block; margin-bottom: 10px;}
+.field label {display: block; margin-bottom: 5px;font-size: 14px;}
 .field select {width: 100%;}
-.field {margin-bottom: 10px;}
+.field {margin-bottom:10px;}
 /* day  */
 .field.day{display: flex;justify-content: space-between;}
-.field.day > div {width:calc(( 100% - 15px ) / 2 );}
+.field.day > div {width:calc(( 100% - 10px ) / 2 );}
 /* grade */
 .field.grade{display: flex;justify-content: space-between;}
 .field.grade > div{width:calc( ( 100% - 15px ) / 2 );}
 .field.grade .right{display: flex;justify-content: space-between;}
 .field.grade .right > div{width:calc( ( 100% - 15px ) / 2 );}
 
-.inp-field{height: 30px;width: 100%; font-size: 16px;text-indent: 8px;
+.inp-field{height: 30px;width: 100%; font-size: 14px;text-indent: 8px;
     color:#c7c7c7; border-radius: 5px; width: 100%;
     border: 1px solid #c7c7c7;}
 .inp-field:focus{outline: 3px solid rgba(0,0,0,0.2) ;}
@@ -145,8 +146,12 @@ legend{position: absolute;left: 0;top:-9999px;}
     cursor: pointer;
     font-size: 18px;
     color:#fff;
-    margin: 0 auto;
-}
+    margin: 0 auto;}
+.left .gallery{display: flex;position: relative; justify-content: space-between;}
+
+
+    
+
     
    
         
