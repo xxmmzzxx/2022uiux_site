@@ -90,7 +90,7 @@ h1{position: absolute;left: -9999px;}
 .sns img {float: left;padding:5px;}
 .util{ display: flex;justify-content: center;align-items: center;height:60px;border-bottom:5px solid  #019B75; }
 .util li:after{content: "";width: 1px;height: 55px;display: block;top: 85px; position: absolute;background-color: #E1E1E1;}
-.util li a {color: #000; padding:40px; font-size: 18px;}
+.util li a {color: #000; padding:50px; font-size: 18px;}
 .wall  {width: 1px;height: 55px;background-color: #E1E1E1;}
 
 
@@ -147,8 +147,16 @@ legend{position: absolute;left: 0;top:-9999px;}
     font-size: 18px;
     color:#fff;
     margin: 0 auto;}
-.left .gallery{display: flex;position: relative; justify-content: space-between;}
+    
+    .gallery { position: relative;}
+    .gallery .country li {position: absolute;}
+  
 
+    
+
+    
+   
+    
 
     
 
