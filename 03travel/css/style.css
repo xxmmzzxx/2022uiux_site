@@ -36,6 +36,10 @@ h1{position: absolute;left: -9999px;}
     text-indent: -9999px;
     cursor: pointer;
 }
+.left::after{
+    content: ""; 
+    display: block;
+    clear: both;}
 .top{
     background-image: url(images/topbg.png);
     background-color: #0862A1;
@@ -111,12 +115,11 @@ main .bx-wrapper {
 .sliderPager .boxPager a { 
     display: block;height: 71px;line-height:71px;
     display: flex;justify-content: center;align-items: center;}
-
 main .top {width: 482px;height: 287px;position: relative;top: 56px;}
 main .wrapper {float:right; width: 350px;height: 287px; background: #fff;
              display: flex;justify-content: center;align-items: center;
             padding: 30px; } 
-main.formwrappe{width: 100%;height: 100%;}
+main.formwrapper {width: 100%;height: 100%;}
 
 fieldset{border: 0 none;}
 legend{position: absolute;left: 0;top:-9999px;}
@@ -147,9 +150,41 @@ legend{position: absolute;left: 0;top:-9999px;}
     font-size: 18px;
     color:#fff;
     margin: 0 auto;}
+
+    .bottom { position: relative;}
+    .bottom ul  {position: absolute;}
+    .bottom ul li {float: left; padding-top: 80px; margin-right: 10px;}
+    .bottm ul li 
+   
+
+
+
+
+  
+
+
+  
+
+
+
+ 
+
+
+
+
+
+                                                                                                                                        
     
-    .gallery { position: relative;}
-    .gallery .country li {position: absolute;}
+
+
+
+
+
+
+
+    
+   
+    
   
 
     
