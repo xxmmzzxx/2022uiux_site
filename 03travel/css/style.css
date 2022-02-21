@@ -99,28 +99,29 @@ h1{position: absolute;left: -9999px;}
 
 
 
-/* main */
-main{width: 980px;margin: 0 auto;}
+/* content */
+section {width: 980px; margin: 0 auto;}
 
 /* bxslide */
-main .bx-wrapper {
+section .bx-wrapper {
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
     border: 0 none;
     margin-bottom: 0;}
+.airport { background:#019B75;}
 
 .sliderPager{bottom: 0px;background: #026147;;width: 132px;position:absolute;top:0;}
 .sliderPager .boxPager { display: block;}
 .sliderPager .boxPager a { 
     display: block;height: 71px;line-height:71px;
     display: flex;justify-content: center;align-items: center;}
-main .top {width: 482px;height: 287px;position: relative;top: 56px;}
-main .wrapper {float:right; width: 350px;height: 287px; background: #fff;
+section .top {width: 482px;height: 287px;position: relative;top: 56px;}
+section .wrapper {float:right; width: 350px;height: 287px; background: #fff;
              display: flex;justify-content: center;align-items: center;
             padding: 30px; } 
-main.formwrapper {width: 100%;height: 100%;}
-
+            section .formwrapper {width: 100%;height: 100%;}
+.left{display: block;}
 fieldset{border: 0 none;}
 legend{position: absolute;left: 0;top:-9999px;}
 .field label {display: block; margin-bottom: 5px;font-size: 14px;}
@@ -151,10 +152,27 @@ legend{position: absolute;left: 0;top:-9999px;}
     color:#fff;
     margin: 0 auto;}
 
-    .bottom { position: relative;}
-    .bottom ul  {position: absolute;}
-    .bottom ul li {float: left; padding-top: 80px; margin-right: 10px;}
-    .bottm ul li 
+    .bottom .gallery { float: left;position: relative; }
+    .bottom,.gallery{ margin-right: 15px; padding-top: 36px;}
+    .bottom img { display: block;}
+    .bottom .france,.france01 {position: absolute;display: flex;align-items: center;width: 100%;justify-content: space-between;height: 48px;bottom:0;} 
+    .bottom .france {background: #384750;}
+    .bottom .france01{background: #152630;}
+    .bottom h3,p{font-size: 18px;padding: 16px;} 
+    .bottom h3 {color: #fff;font-weight: 400;}
+    .bottom p { color: #70C465;font-weight: 300;}
+    .textright { float: right;}
+   
+
+
+
+
+
+   
+    
+      
+
+
    
 
 
