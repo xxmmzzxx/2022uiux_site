@@ -1,5 +1,6 @@
 *{font-family: 'Noto Sans KR', sans-serif;}
 
+
 /* header  */
 .wrapper{background: #E4EFD1;}
 header{width: 980px;margin: 0 auto;height: 85px;line-height: 85px;}
@@ -92,15 +93,18 @@ h1{position: absolute;left: -9999px;}
 }
 
 .sns img {float: left;padding:5px;}
-.util{ display: flex;justify-content: center;align-items: center;height:60px;border-bottom:5px solid  #019B75; }
+.util{ display: flex;justify-content: center;align-items: center;height:60px;border-bottom:5px solid  #019B75;background: #FFF; }
 .util li:after{content: "";width: 1px;height: 55px;display: block;top: 85px; position: absolute;background-color: #E1E1E1;}
 .util li a {color: #000; padding:50px; font-size: 18px;}
 .wall  {width: 1px;height: 55px;background-color: #E1E1E1;}
 
 
 
-/* content */
+/* section */
 section {width: 980px; margin: 0 auto;}
+
+section.left{display: flex;}
+
 
 /* bxslide */
 section .bx-wrapper {
@@ -153,7 +157,7 @@ legend{position: absolute;left: 0;top:-9999px;}
     margin: 0 auto;}
 
     .bottom .gallery { float: left;position: relative; }
-    .bottom,.gallery{ margin-right: 15px; padding-top: 36px;}
+    .bottom, .gallery{ margin-right: 16px; padding-top: 36px;}
     .bottom img { display: block;}
     .bottom .france,.france01 {position: absolute;display: flex;align-items: center;width: 100%;justify-content: space-between;height: 48px;bottom:0;} 
     .bottom .france {background: #384750;}
@@ -162,7 +166,42 @@ legend{position: absolute;left: 0;top:-9999px;}
     .bottom h3 {color: #fff;font-weight: 400;}
     .bottom p { color: #70C465;font-weight: 300;}
     .textright { float: right;}
-   
+    
+    section .textright { padding-top:50px;}
+    section .txtright h2 {font-size: 54px;font-weight: bold;}
+    section .txtright p {font-size: 34px;font-weight: 400;}
+
+ 
+    .contentWrap>ul { width: 980px;margin: 0 auto;}
+    .contentWrap>ul>li{float: left;position: relative; height: 230px;}
+    .contentWrap>ul>li:not(:last-child){margin:16px 16px 0 0;}
+    .contentWrap img { display: block;}
+    .contentWrap>ul>li:nth-child(2) h3{ background:#152630;color:#fff;}
+    .contentWrap>ul>li:nth-child(3) h3{ background:rgba(0,0,0,0.6);color:#fff;}
+    .contentWrap>ul>li:nth-child(4) h3{ background:#44619D;color:#fff}
+    .contentWrap>ul>li:nth-child(4) {margin-top: 16px;background: #fff; }
+    .contentWrap h3 {font-size: 17px;font-weight: 400;z-index:(1);bottom: 0px;
+                     position: absolute;height: 48px;width: 100%;background:#50934E;display: flex;vertical-align: middle
+                    ;justify-content: center;flex-direction: column;text-indent: 16px;}
+
+    .contentWrap>ul>li:nth-child(4) p { font-size: 14px;position: absolute;top:10px;}
+  
+
+    
+
+
+
+  
+
+
+
+
+
+
+
+
+ 
+    
 
 
 
