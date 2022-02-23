@@ -16,11 +16,24 @@
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.formwrapper').bxSlider({
-                mode: 'vertical', pagerCustom: '.boxPager',
-                controls: 'false',
+        $(document).ready(function() {
+            var $Slider=$('.formwrapper').bxSlider({
+                mode: 'vertical', controls:false,
+                pagerCustom: '.boxPager'
+                
             });
+            $(document).ready(function(){
+            var mySlider = $('.slider').bxSlider({
+            pager:false,controls:false})
+            $(".next").click(function(){
+                mySlider.goToNextSlide()
+            });
+            $(".prev").click(function(){
+                mySlider.goToPrevSlide()
+            });
+            });
+              
+           ;
         });    
     </script>
 
@@ -313,9 +326,24 @@
     <div class="contentWrap">
         <ul>
             <li>
-                <img src="images/hillton.png" alt="">
-                <h3>HILLTON HOTEL (PARIS)</br>
-                </h3>
+                <ul class="slider">
+                    <li>
+                        <img src="images/hillton.png" alt="">
+                        <h3>HILLTON HOTEL (PARIS)</br>
+                        </h3>
+                    </li>
+                    <li>
+                        <img src="images/hillton.png" alt="">
+                        <h3>HILLTON HOTEL (PARIS)</br>
+                        </h3>
+                    </li>
+                </ul>
+                <div class="prev">
+                    <img src="images/left.png" alt="">
+                </div>
+                <div class="next">
+                    <img src="images/right.png" alt="">
+                </div>
 
             </li>
             <li><img src="images/Universal.png" alt="">
@@ -338,9 +366,7 @@
                     자유여행 -</p>
             </li>
         </ul>
-        
     </div>
-
     
 
 </body>
