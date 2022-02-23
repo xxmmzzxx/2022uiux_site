@@ -113,9 +113,20 @@ section .bx-wrapper {
     box-shadow: 0 0 0 transparent;
     border: 0 none;
     margin-bottom: 0;}
+
+.contentWrap  .bx-wrapper {
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    border: 0 none;
+    margin-bottom: 0;}
+.prev{width: 10%;}
+    
+    
+
 .airport { background:#019B75;}
 
-.sliderPager{bottom: 0px;background: #026147;;width: 132px;position:absolute;top:0;}
+.sliderPager{bottom: 0px;background: #026147;width: 132px;position:absolute;top:0;}
 .sliderPager .boxPager { display: block;}
 .sliderPager .boxPager a { 
     display: block;height: 71px;line-height:71px;
@@ -173,19 +184,29 @@ legend{position: absolute;left: 0;top:-9999px;}
 
  
     .contentWrap>ul { width: 980px;margin: 0 auto;}
-    .contentWrap>ul>li{float: left;position: relative; height: 230px;}
+    .contentWrap>ul>li{float: left;position: relative; }
     .contentWrap>ul>li:not(:last-child){margin:16px 16px 0 0;}
-    .contentWrap img { display: block;}
+    .contentWrap img { display: block;height: 233px;}
+    .contentWrap>ul>li:nth-child(1) { width: 226.2px;}
     .contentWrap>ul>li:nth-child(2) h3{ background:#152630;color:#fff;}
     .contentWrap>ul>li:nth-child(3) h3{ background:rgba(0,0,0,0.6);color:#fff;}
     .contentWrap>ul>li:nth-child(4) h3{ background:#44619D;color:#fff}
     .contentWrap>ul>li:nth-child(4) {margin-top: 16px;background: #fff; }
-    .contentWrap h3 {font-size: 17px;font-weight: 400;z-index:(1);bottom: 0px;
-                     position: absolute;height: 48px;width: 100%;background:#50934E;display: flex;vertical-align: middle
+    .contentWrap h3 {font-size: 17px;font-weight: 400;z-index:1;bottom: 0px;
+                     position: absolute;height: 48px;width: 100%;background:#50934E;display: flex;vertical-align: middle;
                     ;justify-content: center;flex-direction: column;text-indent: 16px;}
 
     .contentWrap>ul>li:nth-child(4) p { font-size: 14px;position: absolute;top:10px;}
-  
+   
+    .contentWrap>ul>li:nth-child(1) .prev,
+    .contentWrap>ul>li:nth-child(1) .next
+        {position: absolute;top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;}
+       
+    .contentWrap>ul>li:nth-child(1) .next{right: 0;}
+    .contentWrap>ul>li:nth-child(1) .prev{left: 0;}
+    
 
     
 
@@ -255,8 +276,4 @@ legend{position: absolute;left: 0;top:-9999px;}
     
    
         
-       
- 
-   
     
-
