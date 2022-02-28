@@ -141,9 +141,9 @@ section .bx-wrapper {
 .airport { background:#019B75;}
 
 .sliderPager{bottom: 0px;background: #026147;width: 132px;position:absolute;top:0;}
-.sliderPager .boxPager { display: block;}
+.sliderPager .boxPager { display: block;;}
 .sliderPager .boxPager a { 
-    display: block;height: 71px;line-height:71px;
+    display: block;height: 71px;line-height:71px;color: #fff;
     display: flex;justify-content: center;align-items: center;}
 section .top {width: 482px;height: 287px;position: relative;top: 56px;}
 section .wrapper {float:right; width: 350px;height: 287px; background: #fff;
@@ -243,7 +243,7 @@ legend{position: absolute;left: 0;top:-9999px;}
 
 
     body
-    {background-image: url(../images/Mask\ Group\ \(3\).png);
+    {background-image: url(../images/Mask.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -264,10 +264,10 @@ legend{position: absolute;left: 0;top:-9999px;}
      .lastWrap li:hover .viewer{top:0}
 
      footer{width: 980px;margin:0 auto;}
-   
+     footer ul {display: block;}
      footer li{float:left;padding-right:25px;padding-top: 10px;}
-     footer a{display:block;}
-     footer p{color:#c3c3c3;font-size:13px;}
+     footer a { display: block;}
+     footer p{color:#404142;font-size:13px;}
      
      
 
