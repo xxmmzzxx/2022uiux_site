@@ -106,7 +106,7 @@ section.left{display: flex;}
 section .textright {z-index: 1}
 section .ballon {
     position: absolute;
-    transform: translateY(170px) translateX(500px);
+    transform: translateY(150px) translateX(500px);
     animation-name:ball;
     animation-duration: 3s;
     /* animation-fill-mode: forwards; */
@@ -116,8 +116,8 @@ section .ballon {
     transform-origin: center bottom;
 }
 @keyframes ball{
-    from{transform: translateY(160px) translateX(500px) rotate(-10deg);}
-    to{transform: translateY(170px) translateX(500px) rotate(10deg);}
+    from{transform: translateY(180px) translateX(500px) rotate(-10deg);}
+    to{transform: translateY(150px) translateX(500px) rotate(10deg);}
 }
 
 /* bxslide */
