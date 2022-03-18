@@ -2,6 +2,10 @@ $(document).ready(function(){
     var mySlider = $('.slider').bxSlider({
         pager: false, controls: false
     })
+    $(".nSlider").bxSlider({
+        pager: false, controls: false
+    });
+
     $(".nextBtn").on('click', function () {
         mySlider.goToNextSlide()
     });
@@ -21,5 +25,12 @@ $(document).ready(function(){
         innerHeight:394
     });
 });
-
-
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    loop: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+    },
+  });
