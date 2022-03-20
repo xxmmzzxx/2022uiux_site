@@ -25,12 +25,5 @@ $(document).ready(function(){
         innerHeight:394
     });
 });
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    loop: true,
-    breakpoints: {
-      768: {
-        slidesPerView: 3,
-      },
-    },
-  });
+
+
