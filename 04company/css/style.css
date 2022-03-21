@@ -287,6 +287,5 @@ cursor: pointer;}
     }
     .visualWrap .txtBody.txt{display: flex;justify-content: center;align-items: center;}
     .bx-wrapper .bx-pager{bottom: 30px;}
-    .contents{width: 100%;}
-    .contents>ul>li{width: 50%;}
+   
 
