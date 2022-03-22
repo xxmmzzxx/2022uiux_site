@@ -161,7 +161,7 @@ float: left;left:0;cursor: pointer;}
 .containerSNS .swiperWrap { width:933x;height: 622px; ;overflow: hidden;}
 .containerSNS .swiperWrap ul {display: flex;}
 .containerSNS .swiperWrap li.basic img {width: 100%;display: block;}
-.containerSNS .swiperWrap li.basic p {height: 311px;padding: 30px 20px;background: #FFF0C3;font-size: 16px;}
+.containerSNS .swiperWrap li.basic p {height: 311px;padding: 30px 20px;color: #424242; background: #FFF0C3;font-size: 16px;}
 .containerSNS .swiperWrap li.basic {position: relative;display: flex;flex-direction: column;width: calc( 100% / 3);}
 .containerSNS .swiperWrap li.basic:after {
     content:"";display: block;
