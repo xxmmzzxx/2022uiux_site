@@ -115,6 +115,9 @@ body {
 .visualWrap .bx-wrapper .bx-pager {
     bottom: 350px;
 }
+.bx-wrapper {
+margin-bottom: 80px;}
+
 .visualWrap .txtBody {
     text-align: center;
     transform: translateY(-160px);
@@ -348,8 +351,8 @@ body {
 .container {
     background: url("../images/visionbackground.png") no-repeat center fixed;
     background-size: cover;
-    padding: 60px 0;
-    margin-bottom: 50px;
+    padding: 20px 0;
+    margin-bottom: 80px;
 }
 .container .section {
     width: 1244x;
@@ -566,10 +569,10 @@ body {
     font-weight: bold;
     color: #2f2f2f;
 }
-.bannerLeft img {
-    display: block;
-    float: right;
-    margin-left: 80px;
+.bannerLeft {
+  background-image: url(../images/arcticons_baidu-map.png);
+  background-repeat: no-repeat;
+  background-position: 360px 50px;
 }
 .bannerRight {
     width: 622px;
@@ -599,13 +602,10 @@ body {
 }
 
 /* footer */
-#footer {
-    border-top: 1px solid #424242;
-}
-.footerWrap {
-    width: 1244px;
-    margin: 0 auto;
-    padding: 30px 0;
+#footer{background: #ddd;}
+#footer .footerWrap{
+    width: 1244px; height: 150px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
 }
 .foot {
     float: left;
@@ -637,7 +637,7 @@ body {
     display: block;
     width: 1px;
     height: 14px;
-    background: #4d4d4d;
+    background: #424242;
     position: absolute;
     right: -4px;
     top: 14px;
@@ -912,27 +912,85 @@ body {
         width: 50%;
     }
     /* section  */
-    .container .section{width: 100%;padding: 0 20px;}
-    .container .ban{ flex-wrap: wrap;}
-    .container .ban li{width: calc( ( 100% - 20px ) / 2 );margin-bottom: 20px;}
-    .container .ban li img{margin-bottom: 60px;}
-    .container .ban li:nth-child(2n){margin-right: 0;}
-    .container .ban li .cardtxt p{display: none;}
+    .container .section {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .container .ban {
+        flex-wrap: wrap;
+    }
+    .container .ban li {
+        width: calc((100% - 20px) / 2);
+        margin-bottom: 20px;
+    }
+    .container .ban li img {
+        margin-bottom: 60px;
+    }
+    .container .ban li:nth-child(2n) {
+        margin-right: 0;
+    }
+    .container .ban li .cardtxt p {
+        display: none;
+    }
 
     /* swiper  */
-      @media screen and (max-width:768px){
-            .containerSNS { flex-direction: column;width: 100%;height: 100px;}
-            .containerSNS .info{width: 100%;height: 100px;}
-            .containerSNS .swiperWrap{width: 100%;}
-            .containerSNS .swiperWrap li.basic{flex-direction: row;}
-            .containerSNS .swiperWrap li.basic img{width: 50%;order:1}
-            .containerSNS .swiperWrap li.basic p{width: 50%;order:2;height: initial;}
-            .containerSNS .swiperWrap li.basic:after,
-            .containerSNS .swiperWrap li.basic.change:after{
-                transform:translateY(-10px) translateX(-20px) rotate(-90deg)
-            }
 
-            .container .swiperWrap li.basic.change img{width: 50%;order:1}
-            .container .swiperWrap li.basic.change p{width: 50%;order:2}
-        }
+    .containerSNS {
+        flex-direction: column;
+        width: 100%;
+        height: initial;
+    }
+    .containerSNS .info {
+        width: 100%;
+        height:initial;
+    }
+
+    .containerSNS .view {
+        display: none;
+    }
+    .containerSNS .swiperWrap {
+        width: 100%;
+        height: initial;
+    }
+    .containerSNS .swiperWrap li.basic {
+        flex-direction: row;
+    }
+    .containerSNS .swiperWrap li.basic img {
+        width: 50%;
+        order: 2;
+    }
+    .containerSNS .swiperWrap li.basic p {
+        width: 50%;
+        order: 1;
+        height: initial;
+    }
+    .containerSNS .swiperWrap li.basic.change:after,
+    .containerSNS .swiperWrap li.basic:after {
+        transform: translateY(-10px) translateX(-20px) rotate(-90deg);
+    }
+    .container .swiperWrap li.basic.change img {
+        width: 50%;
+        order: 2;
+    }
+    .container .swiperWrap li.basic.change p {
+        width: 50%;
+        order: 1;
+    }
+    /* banner  */
+    .banner {
+        width: 100%; 
+    }
+    .bannerLeft{ display: none;}
+
+    /* footer  */
+
+   
+
+    #footer{background: #ddd;margin: 0 auto;}
+  #footer .footerWrap{display: flex;justify-content: center; align-items: center;}    .footer_ul > li > a {font-size: 14px;}
+  .footer_ul { display: none;}
+
+
+
+
 }
