@@ -39,21 +39,102 @@
                     <ul>
                         <li>
                             <a href="#">SPC GROUP</a>
+                            <ul>
+                                <li>
+                                    <a href="#">CEO</a>
+                                </li>
+                                <li>
+                                    <a href="#">인사말</a>
+                                </li>
+                                <li>
+                                    <a href="#">SPC WAY</a>
+                                </li>
+                                <li>
+                                    <a href="#">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="#">CI</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">BUSINESS</a>
+                            <ul>
+                                <li>
+                                    <a href="#">글로벌</a>
+                                </li>
+                                <li>
+                                    <a href="#">계열사</a>
+                                </li>
+                                <li>
+                                    <a href="#">브랜드</a>
+                                </li>
+                                <li>
+                                    <a href="#">R&D</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">MEDIA HUB</a>
+                            <ul>
+                                <li>
+                                    <a href="#">패밀리채널</a>
+                                </li>
+                                <li>
+                                    <a href="#">뉴스</a>
+                                </li>
+                                <li>
+                                    <a href="#">SPC매거진</a>
+                                </li>
+                                <li>
+                                    <a href="#">SNS</a>
+                                </li>
+                                <li>
+                                    <a href="#">유튜브</a>
+                                </li>
+                                <li>
+                                    <a href="#">CF</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#">CSR</a>
+                            <a href="#">ESG</a>
+                            <ul>
+                                <li>
+                                    <a href="#">SPC 행복한재단</a>
+                                </li>
+                                <li>
+                                    <a href="#">사회공헌 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">사회공헌 소식</a>
+                                </li>
+                                <li>
+                                    <a href="#">정도경영</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">CAREERS</a>
+                            <ul>
+                                <li>
+                                    <a href="#">인재채용</a>
+                                </li>
+                                <li>
+                                    <a href="#">인재양성</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">CONTACT</a>
+                            <ul>
+                                <li>
+                                    <a href="#">창업정보</a>
+                                </li>
+                                <li>
+                                    <a href="#">오시는길</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -241,7 +322,7 @@
         <div class="info">
             <h3>SPC그룹<br>
                 공식 SNS채널</h3>
-            <p>푸드 트렌드와 레시피,
+            <p class=" food">푸드 트렌드와 레시피,
                 <br>
                 다양한 이벤트를 만나보세요.</p>
             <div class="view">
@@ -405,12 +486,10 @@
                 </ul>
             </div>
         </div>
-
     </div>
     <!-- banner -->
     <div class="banner">
         <div class="bannerLeft">
-            <img src="images/arcticons_baidu-map.png" alt="">
             <div class="bannertext">
                 <h2>찾아오시는 길</h2>
                 <p>Welcome to SPC</p>
@@ -428,7 +507,6 @@
                 <p class="job">
                     <a href="https://spc.recruiter.co.kr/appsite/company/index">채용공고 바로가기</a>
                 </p>
-
                 <p class="job2">
                     <a href="https://spc.recruiter.co.kr/appsite/company/index">채용사이트 바로가기</a>
                 </p>
@@ -478,9 +556,11 @@
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             loop: true,
+            freeMode: true,
             breakpoints: {
                 768: {
-                    slidesPerView: 3
+                    slidesPerView: 3,
+                    freeMode: false
                 }
             },
             navigation: {
