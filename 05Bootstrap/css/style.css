@@ -2,3 +2,31 @@
 body {
 font-family: 'Poppins', sans-serif;}
 
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .navbar-light .navbar-nav .nav-link{color: black; font-size: 18px;font-weight: bold;}
+  .navbar-nav > li > a {line-height: 18px;}
+  .navbar-nav > li {padding: 20px 15px;}
+  
+  .main-section{
+    padding: 120px 0 120px;
+  }
+  .bd-placeholder-img {
+    border-radius: 50%;}
+    .bd-placeholder-img .rounded-circle{
+      display: block;
+    }
+  
+  
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg { 
+ 
+      font-size: 3.5rem;
+    }
+  }
+  
