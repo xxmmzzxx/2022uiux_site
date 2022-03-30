@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+
         <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
@@ -16,12 +17,13 @@
             href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
             rel="stylesheet">
     </head>
-    <div id="header" class="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light m-3">
+    <body>
+        <header class="site-header sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="images/logo1.png" alt=""></a>
+                        <img src="images/logo1.png" alt="">
+                    </a>
                     <button
                         class="navbar-toggler d-lg-none"
                         type="button"
@@ -33,30 +35,289 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0  transform=translate(0.012 -0.1)">
-                            <li class="nav-item active ">
-                                <a class="nav-link" href="#">Our range</a>
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">회사소개</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Recipes</a>
+                                <a class="nav-link" href="#">무역사업</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Who are Sempio</a>
+                                <a class="nav-link" href="#">제약사업</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Global network</a>
+                                <a class="nav-link" href="#">뉴스룸</a>
                             </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">채용</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">문의</a>
+                            </li>
                         </ul>
 
                     </div>
                 </div>
-            </nav>
+            </header>
 
-        </div>
-    </div>
-    <body>
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-    </body>
-</html>
+            <main>
+
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#myCarousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"></button>
+                        <button
+                            type="button"
+                            data-bs-target="#myCarousel"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button
+                            type="button"
+                            data-bs-target="#myCarousel"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                class="bd-placeholder-"
+                                src="images/slider (2).jpg"
+                                alt=""
+                                width="100%"
+                                height="100%"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true"
+                                preserveaspectratio="xMidYMid slice"
+                                focusable="false"><rect width="100%" height="100%" fill="#777"/>
+
+                            <div class="container">
+                                <div class="carousel-caption text-center">
+                                    <h1 class="display-2 fw-normal">RICHWOOD PHARMACEUTICALS</h1>
+                                    <p>풍림무약주식회사는 국내외 제약사와 협업하며 독자적인 기술력과 최첨단 생산설비,<br>엄격한 품질관리 시스템을 통해 고객사의 다양한 필요를 충족하는 의약품을 공급해 왔습니다.</p>
+                                    <p>
+                                        <a class="btn btn-lg btn-light" href="#">VIEW MORE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                class="bd-placeholder-text-center"
+                                src="images/slider (3).jpg"
+                                alt=""
+                                width="100%"
+                                height="100%"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true"
+                                preserveaspectratio="xMidYMid slice"
+                                focusable="false"><rect width="100%" height="100%" fill="#777"/>
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1 class="display-2 fw-normal">RICKWOOD</h1>
+                                    <p>맑은 공기를 만드는 울창한 숲처럼<br>
+                                        건강한 사회를 만드는 풍림무약주식회사입니다.</p>
+                                    <p>
+                                        <a class="btn btn-lg btn-light" href="#">VIEW MORE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                class="bd-placeholder-"
+                                src="images/slider.jpg"
+                                alt=""
+                                width="100%"
+                                height="100%"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true"
+                                preserveaspectratio="xMidYMid slice"
+                                focusable="false"><rect width="100%" height="100%" fill="#777"/>
+
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1 class="display-2 fw-normal">RICHWOOD TRADING</h1>
+                                    <p>고부가가치 제품을 공급하며 기업과 기업,기업과 세상을 연결하는 역할을 수행하고 있습니다.<br>풍림무약 주식회사는 고객사의 성공을 지원하는 든든한 파트너로 우리 모두를 위한 내일을 열어 갑니다.</bbr>
+                                </p>
+                                <p>
+                                    <a class="btn btn-lg btn-light" href="#">VIEW MORE</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="container marketing">
+
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <!-- /.col-lg-4 -->
+                </div>
+                <!-- /.row -->
+
+                <!-- START THE FEATURETTES -->
+
+                <main class="main-section main-notice">
+                    <div class="wrap">
+                        <h2 class="display-5 fw-bold">제약사업</h2>
+                        <p class="fw-bold">건강한 사회를 만드는 풍성한 숲과 같은 기업 풍림무약은 우리 사회와 구성원들이 더욱 건강해질 수 있도록 우수한 의약품과 건강기능식품을<br>
+                            개발, 공급하고 있습니다. 존재만으로 개인과 사회에 치유와 안정을 선사하는 울창한 숲처럼 풍림무약은 헬스케어 산업의 허브이자 흔들리지
+                            <br>않는 버팀목이 되겠습니다.</p>
+                        <p>
+                            <a class="btn btn-default btn-lg btn-outline-secondary" href="#" role="button">VIEW MORE</a>
+                        </p>
+                    </div>
+                </main>
+                <main>
+
+                    <div class="album bg-light">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img
+                                        class="bd-placeholder-img rounded-circle m-4"
+                                        src="images/main-biz-pharmaceutical-cdmo@2x.jpg"
+                                        width="280"
+                                        height="280"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        aria-label="Placeholder: 280x280"
+                                        preserveaspectratio="xMidYMid slice"
+                                        focusable="false">
+                                    <h5 class="d-flex justify-content-center align-item-center fw-bold ">CDMO사업</h5>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img
+                                        class="bd-placeholder-img rounded-circle m-4"
+                                        src="images/main-biz-pharmaceutical-cdmo@2x.jpg"
+                                        width="280"
+                                        height="280"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        aria-label="Placeholder: 280x280"
+                                        preserveaspectratio="xMidYMid slice"
+                                        focusable="false">
+                                    <h5 class="d-flex justify-content-center align-item-center fw-bold ">CDMO사업</h5>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img
+                                        class="bd-placeholder-img rounded-circle m-4"
+                                        src="images/main-biz-pharmaceutical-cdmo@2x.jpg"
+                                        width="280"
+                                        height="280"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        aria-label="Placeholder: 280x280"
+                                        preserveaspectratio="xMidYMid slice"
+                                        focusable="false">
+                                    <h5 class="d-flex justify-content-center align-item-center fw-bold ">CDMO사업</h5>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img
+                                        class="bd-placeholder-img rounded-circle m-4"
+                                        src="images/main-biz-pharmaceutical-cdmo@2x.jpg"
+                                        width="280"
+                                        height="280"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        aria-label="Placeholder: 280x280"
+                                        preserveaspectratio="xMidYMid slice"
+                                        focusable="false">
+                                    <h5 class="d-flex justify-content-center align-item-center fw-bold ">CDMO사업</h5>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img
+                                        class="bd-placeholder-img rounded-circle m-4"
+                                        src="images/main-biz-pharmaceutical-cdmo@2x.jpg"
+                                        width="280"
+                                        height="280"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        aria-label="Placeholder: 280x280"
+                                        preserveaspectratio="xMidYMid slice"
+                                        focusable="false">
+                                    <h5 class="d-flex justify-content-center align-item-center fw-bold ">CDMO사업</h5>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img
+                                        class="bd-placeholder-img rounded-circle m-4"
+                                        src="images/main-biz-pharmaceutical-cdmo@2x.jpg"
+                                        width="280"
+                                        height="280"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        aria-label="Placeholder: 280x280"
+                                        preserveaspectratio="xMidYMid slice"
+                                        focusable="false">
+                                    <h5 class="d-flex justify-content-center align-item-center fw-bold ">CDMO사업</h5>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img
+                                        class="bd-placeholder-img rounded-circle m-4"
+                                        src="images/main-biz-pharmaceutical-cdmo@2x.jpg"
+                                        width="280"
+                                        height="280"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        aria-label="Placeholder: 280x280"
+                                        preserveaspectratio="xMidYMid slice"
+                                        focusable="false">
+                                    <h5 class="d-flex justify-content-center align-item-center fw-bold ">CDMO사업</h5>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img
+                                        class="bd-placeholder-img rounded-circle m-4"
+                                        src="images/main-biz-pharmaceutical-cdmo@2x.jpg"
+                                        width="280"
+                                        height="280"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        role="img"
+                                        aria-label="Placeholder: 280x280"
+                                        preserveaspectratio="xMidYMid slice"
+                                        focusable="false">
+                                    <h5 class="d-flex justify-content-center align-item-center fw-bold ">CDMO사업</h5>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </main>
+
+                    <!-- FOOTER -->
+                    <footer class="container">
+                        <p class="float-end">
+                            <a href="#">Back to top</a>
+                        </p>
+                        <p>&copy; 2017–2021 Company, Inc. &middot;
+                            <a href="#">Privacy</a>
+                            &middot;
+                            <a href="#">Terms</a>
+                        </p>
+                    </footer>
+                </main>
+
+                <script src="js/jquery-3.1.1.min.js"></script>
+                <script src="js/bootstrap.bundle.min.js"></script>
+            </body>
+        </html>
