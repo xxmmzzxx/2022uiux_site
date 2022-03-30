@@ -18,7 +18,7 @@ font-family: 'Poppins', sans-serif;}
   }
   .bd-placeholder-img {
     border-radius: 50%;}
-    .bd-placeholder-img .rounded-circle{
+    .bd-placeholder-img .rounded-circle .m-4{
       display: block;
     }
   
