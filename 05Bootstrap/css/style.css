@@ -16,17 +16,14 @@ font-family: 'Poppins', sans-serif;}
   .main-section{
     padding: 120px 0 120px;
   }
-  .bd-placeholder-img {
-    border-radius: 50%;}
-    .bd-placeholder-img .rounded-circle .m-4{
-      display: block;
-    }
-  
-  
+  #footer .container-fluid .px-5{display: flex; }
+.album .text-center {font-size: 20px;}
+  .card-text { font-size: 18px;}
+.py-5 { padding-top:6rem; padding-bottom: 6rem;} 
   @media (min-width: 768px) {
     .bd-placeholder-img-lg { 
  
       font-size: 3.5rem;
     }
   }
-  
+.display-6 { font-size: 33px;}
