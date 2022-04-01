@@ -7,7 +7,9 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
         <link
             rel="preconnect"
@@ -70,11 +72,7 @@
                             </a>
                         </div>
                         <div class="global-open">
-                            <a
-                                href="#"
-                                class="text-dark fw-bold"
-                                global-open__btn="global-open__btn"
-                               >
+                            <a href="#" class="text-dark fw-bold" global-open__btn="global-open__btn">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="18"
@@ -89,266 +87,280 @@
                         </div>
                     </div>
                 </div>
-                </nav>
-            </header>
+            </nav>
+        </header>
 
-                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button
-                            type="button"
-                            data-bs-target="#myCarousel"
-                            data-bs-slide-to="0"
-                            class="active"
-                            aria-current="true"
-                            aria-label="Slide 1"></button>
-                        <button
-                            type="button"
-                            data-bs-target="#myCarousel"
-                            data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button
-                            type="button"
-                            data-bs-target="#myCarousel"
-                            data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img
-                                class="bd-placeholder-"
-                                src="images/slider (2).jpg"
-                                alt=""
-                                width="100%"
-                                height="100%"
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true"
-                                preserveaspectratio="xMidYMid slice"
-                                focusable="false"><rect width="100%" height="100%" fill="#777"/>
-
-                            <div class="container">
-                                <div class="carousel-caption text-center">
-                                    <h1 class="display-2 fw-normal">RICHWOOD PHARMACEUTICALS</h1>
-                                    <p>풍림무약주식회사는 국내외 제약사와 협업하며 독자적인 기술력과 최첨단 생산설비,<br>엄격한 품질관리 시스템을 통해 고객사의 다양한 필요를 충족하는 의약품을 공급해 왔습니다.</p>
-                                    <p>
-                                        <a class="btn btn-lg btn-light" href="#">VIEW MORE</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                class="bd-placeholder-text-center"
-                                src="images/slider (3).jpg"
-                                alt=""
-                                width="100%"
-                                height="100%"
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true"
-                                preserveaspectratio="xMidYMid slice"
-                                focusable="false"><rect width="100%" height="100%" fill="#777"/>
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <h1 class="display-2 fw-normal">RICKWOOD</h1>
-                                    <p>맑은 공기를 만드는 울창한 숲처럼<br>
-                                        건강한 사회를 만드는 풍림무약주식회사입니다.</p>
-                                    <p>
-                                        <a class="btn btn-lg btn-light" href="#">VIEW MORE</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                class="bd-placeholder-"
-                                src="images/slider.jpg"
-                                alt=""
-                                width="100%"
-                                height="100%"
-                                xmlns="http://www.w3.org/2000/svg"
-                                aria-hidden="true"
-                                preserveaspectratio="xMidYMid slice"
-                                focusable="false"><rect width="100%" height="100%" fill="#777"/>
-
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <h1 class="display-2 fw-normal">RICHWOOD TRADING</h1>
-                                    <p>고부가가치 제품을 공급하며 기업과 기업,기업과 세상을 연결하는 역할을 수행하고 있습니다.<br>풍림무약 주식회사는 고객사의 성공을 지원하는 든든한 파트너로 우리 모두를 위한 내일을 열어 갑니다.</bbr>
-                                </p>
-                                <p>
-                                    <a class="btn btn-lg btn-light" href="#">VIEW MORE</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
                 <button
-                    class="carousel-control-prev"
                     type="button"
                     data-bs-target="#myCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
                 <button
-                    class="carousel-control-next"
                     type="button"
                     data-bs-target="#myCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button
+                    type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        class="bd-placeholder-"
+                        src="images/slider (2).jpg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        preserveaspectratio="xMidYMid slice"
+                        focusable="false"><rect width="100%" height="100%" fill="#777"/>
 
-            <div class="container marketing">
-
-                <div class="row">
-                    <div class="col-lg-4"></div>
-                    <!-- /.col-lg-4 -->
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1 class="display-2 fw-normal">RICHWOOD PHARMACEUTICALS</h1>
+                            <p>풍림무약주식회사는 국내외 제약사와 협업하며 독자적인 기술력과 최첨단 생산설비,<br>엄격한 품질관리 시스템을 통해 고객사의 다양한 필요를 충족하는 의약품을 공급해 왔습니다.</p>
+                            <p>
+                                <a class="btn btn-lg btn-light" href="#">VIEW MORE</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <div class="carousel-item">
+                    <img
+                        class="bd-placeholder-text-center"
+                        src="images/slider (3).jpg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        preserveaspectratio="xMidYMid slice"
+                        focusable="false"><rect width="100%" height="100%" fill="#777"/>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 class="display-2 fw-normal">RICKWOOD</h1>
+                            <p>맑은 공기를 만드는 울창한 숲처럼<br>
+                                건강한 사회를 만드는 풍림무약주식회사입니다.</p>
+                            <p>
+                                <a class="btn btn-lg btn-light" href="#">VIEW MORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="bd-placeholder-"
+                        src="images/slider.jpg"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        preserveaspectratio="xMidYMid slice"
+                        focusable="false"><rect width="100%" height="100%" fill="#777"/>
 
-                <!-- START THE FEATURETTES -->
-
-                <main class="main-section main-notice">
-                    <div class="wrap">
-                        <h2 class="display-5 fw-bold">제약사업</h2>
-                        <p class="fw-bold">건강한 사회를 만드는 풍성한 숲과 같은 기업 풍림무약은 우리 사회와 구성원들이 더욱 건강해질 수 있도록 우수한 의약품과 건강기능식품을<br>
-                            개발, 공급하고 있습니다. 존재만으로 개인과 사회에 치유와 안정을 선사하는 울창한 숲처럼 풍림무약은 헬스케어 산업의 허브이자 흔들리지
-                            <br>않는 버팀목이 되겠습니다.</p>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 class="display-2 fw-normal">RICHWOOD TRADING</h1>
+                            <p>고부가가치 제품을 공급하며 기업과 기업,기업과 세상을 연결하는 역할을 수행하고 있습니다.<br>풍림무약 주식회사는 고객사의 성공을 지원하는 든든한 파트너로 우리 모두를 위한 내일을 열어 갑니다.</bbr>
+                        </p>
                         <p>
-                            <a class="btn btn-default btn-lg btn-outline-secondary" href="#" role="button">VIEW MORE</a>
+                            <a class="btn btn-lg btn-light" href="#">VIEW MORE</a>
                         </p>
                     </div>
-                </main>
-                <div class="album bg-light">
-                    <div class="container">
+                </div>
+            </div>
+        </div>
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                            <div class="col">
-                                <div class="card shadow-sm">
-                                    <img
-                                        class="bd-placeholder-img card-img-top"
-                                        src="images/01.png"
-                                        width="100%"
-                                        height="225"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        role="img"
-                                        aria-label="Placeholder: Thumbnail"
-                                        preserveaspectratio="xMidYMid slice"
-                                        focusable="false">
-                                    <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
-                                    <p class="text-center fw-bold pt-2">CDMO사업</p>
+    <div class="container marketing">
 
-                                    <div class="card-body">
-                                        <p class="card-text">오랜 경험, 지속적인 연구개발을 통한 독자적인 기술력과 노하우로 우수한 의약품을 생산·공급합니다.</p>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <!-- /.col-lg-4 -->
+        </div>
 
-                                        </div>
-                                    </div>
+        <!-- START THE FEATURETTES -->
+
+        <div class="main-section main-notice">
+            <div class="wrap">
+                <h2 class="main-section__title fw-bold">
+                    풍림무약은<br>새롭게 나아갑니다
+                </h2>
+                    <div class="card bg-outline-5">
+                       <ul class="card-body d-flex d-flex bd-highlight">
+                           <li class="flex-fill p-2"><a href="#">레시피 업데이트 </a></li>
+                           <li class="flex-fill p-2"><a href="#">베이커리 온라인 시연회 10차! - 김태양 제과기능장</a></li>
+                           <li class="flex-fill p-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                          </svg></a></li>
+                       </ul>
+                        </div>
+                    </div>
+        </div>
+    </div >
+    <div class="album bg-light">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img
+                            class="bd-placeholder-img card-img-top"
+                            src="images/01.png"
+                            width="100%"
+                            height="225"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label="Placeholder: Thumbnail"
+                            preserveaspectratio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+                        <p class="text-center fw-bold pt-2">CDMO사업</p>
+
+                        <div class="card-body">
+                            <p class="card-text">오랜 경험, 지속적인 연구개발을 통한 독자적인 기술력과 노하우로 우수한 의약품을 생산·공급합니다.</p>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="card shadow-sm">
-                                    <img
-                                        class="bd-placeholder-img card-img-top"
-                                        src="images/02.png"
-                                        width="100%"
-                                        height="225"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        role="img"
-                                        aria-label="Placeholder: Thumbnail"
-                                        preserveaspectratio="xMidYMid slice"
-                                        focusable="false">
-                                    <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
-                                    <p class="text-center fw-bold pt-2">완제의약품사업
-                                    </p>
 
-                                    <div class="card-body">
-                                        <p class="card-text">RA역량과 경험, 우수한 생산설비와 품질보증 시스템, GMP 관리 기반 신규허가 상담시스템을 갖추었습니다.</p>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="col">
-                                <div class="card shadow-sm">
-                                    <img
-                                        class="bd-placeholder-img card-img-top"
-                                        src="images/03.png"
-                                        width="100%"
-                                        height="225"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        role="img"
-                                        aria-label="Placeholder: Thumbnail"
-                                        preserveaspectratio="xMidYMid slice"
-                                        focusable="false">
-                                    <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
-                                    <p class="text-center fw-bold pt-2">연구개발
-                                    </p>
-                                    <div class="card-body">
-                                        <p class="card-text">전문가로 구성된 R&D팀이 기획과 연구 수행, 품목 허가에 이르는 의약품 개발 전 주기를 담당하여 과제 목표 달성에 기여합니다.</p>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img
+                            class="bd-placeholder-img card-img-top"
+                            src="images/02.png"
+                            width="100%"
+                            height="225"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label="Placeholder: Thumbnail"
+                            preserveaspectratio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+                        <p class="text-center fw-bold pt-2">완제의약품사업
+                        </p>
+
+                        <div class="card-body">
+                            <p class="card-text">RA역량과 경험, 우수한 생산설비와 품질보증 시스템, GMP 관리 기반 신규허가 상담시스템을 갖추었습니다.</p>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                 
-                    <aside class="border border-secondary bg-gradient rounded-3 p-5 p-sm-5 mt-5 m-5">
-                        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-                            <div class="mb-4 mb-xl-0">
-                                <div class="fs-3 fw-bold text-dark">풍림무약의
-                                    어떤 제품을 찾으시나요?
-                                     </div>
-                                <div class="text-danger">추천검색어 #SNOWTEX #PHARMACOAT #CYCLODEXTRIN #COMPUTAR #엔지마띠꼬</div>
-                            </div>
-                            <div class="ms-xl-4">
-                                <div class="input-group mb-2">
-                                    <input class="form-control" type="text" placeholder="검색" aria-label="검색" aria-describedby="button-newsletter" />
-                                    <button class="btn btn-outline-light-lg" id="button-newsletter" type="button"></button>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img
+                            class="bd-placeholder-img card-img-top"
+                            src="images/03.png"
+                            width="100%"
+                            height="225"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label="Placeholder: Thumbnail"
+                            preserveaspectratio="xMidYMid slice"
+                            focusable="false">
+                        <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+                        <p class="text-center fw-bold pt-2">연구개발
+                        </p>
+                        <div class="card-body">
+                            <p class="card-text">전문가로 구성된 R&D팀이 기획과 연구 수행, 품목 허가에 이르는 의약품 개발 전 주기를 담당하여 과제 목표 달성에 기여합니다.</p>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                 </div>
                             </div>
                         </div>
-                    </aside>
+                    </div>
                 </div>
-                    <!-- footer -->
-                    <footer class="bg-dark py-5 mt-auto">
-                        <div class="container px-6">
-                            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                                <div class="col-auto">
-                                    <div class="display-6 fw-bold p-3 p-sm-4 text-white">기업과 세상을 연결하는<br>
-                                    풍림무약입니다</div>
-                                </div>
-                                <div class="col-auto">
-                                    <a class="link-light small" href="#!">회사소개</a>
-                                    <span class="text-white mx-1">&middot;</span>
-                                    <a class="link-light small" href="#!">무역사업</a>
-                                    <span class="text-white mx-1">&middot;</span>
-                                    <a class="link-light small" href="#!">제약사업</a>
-                                    <span class="text-white mx-1">&middot;</span>
-                                    <a class="link-light small" href="#!">뉴스룸</a>
-                                    <span class="text-white mx-1">&middot;</span>
-                                    <a class="link-light small" href="#!">채용</a>
-                                    <span class="text-white mx-1">&middot;</span>
-                                    <a class="link-light small" href="#!">문의</a>
-                                </div>
-                                <p class="text-white p-3 p-sm-4">개인정보처리방침 이메일 무단수집거부<br>
-                                    COPYRIGHT 2021. RICHWOOD TRADING COMPANY, LTD. ALL RIGHTS RESERVED.</p>
-                            </div>
-                        </div>
-                    </footer>
+            </div>
+        </div>
+    </div>
 
-                    <script src="js/jquery-3.1.1.min.js"></script>
-                    <script src="js/bootstrap.bundle.min.js"></script>
-                </body>
-            </html>
+    <aside
+        class="border border-secondary bg-gradient rounded-3 p-5 p-sm-5 mt-5 m-5">
+        <div
+            class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+            <div class="mb-4 mb-xl-0">
+                <div class="fs-3 fw-bold text-dark">풍림무약의 어떤 제품을 찾으시나요?
+                </div>
+                <div class="text-danger">추천검색어 #SNOWTEX #PHARMACOAT #CYCLODEXTRIN #COMPUTAR #엔지마띠꼬</div>
+            </div>
+            <div class="ms-xl-4">
+                <div class="input-group mb-2">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="검색"
+                        aria-label="검색"
+                        aria-describedby="button-newsletter"/>
+                    <button class="btn btn-outline-light-lg" id="button-newsletter" type="button"></button>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+<!-- footer -->
+<footer class="bg-dark py-5 mt-auto">
+    <div class="container px-6">
+        <div
+            class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="display-6 fw-bold p-3 p-sm-4 text-white">기업과 세상을 연결하는<br>
+                    풍림무약입니다</div>
+            </div>
+            <div class="col-auto">
+                <a class="link-light small" href="#!">회사소개</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">무역사업</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">제약사업</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">뉴스룸</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">채용</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">문의</a>
+            </div>
+            <p class="text-white p-3 p-sm-4">개인정보처리방침 이메일 무단수집거부<br>
+                COPYRIGHT 2021. RICHWOOD TRADING COMPANY, LTD. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
