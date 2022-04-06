@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;900&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 </head>
-<body>v
+
+<body>
+    <!-- header  -->
+    <div id="header">
+        <div class="util_Wrapper clearfix">
+            <ul class="util clearfix">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+        </div>
+        <div class="wall"></div>
+        <div class="logo_Wrapper">
+            <h1 class="logo">
+                <a href="#">하이미디어</a>
+            </h1>
+            <div class="toggle">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <nav class="nav_Wrapper">
+            <ul class="nav clearfix">
+                <li><a href="#">웹디자인 · 웹퍼블리셔</a></li>
+                <li><a href="#">편집디자인 · 영상편집</a></li>
+                <li><a href="#">전산세무회계 · ERP</a></li>
+                <li><a href="#">IT · 프로그래밍</a></li>
+                <li><a href="#">컴퓨터활용 · OA</a></li>
+                <li><a href="#">건축 · 인테리어 · 기계설계</a></li>
+                <li><a href="#">자격증과정</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- header end  -->
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/20211228.f43262dc9a0c67cd4e164cf1f0bf4dfe8642.png" alt="" class="slider01"></div>
+      <div class="swiper-slide"><img src="images/20211228.2494d4060404a0d7479f509fff0da2343602.png" alt="" class="slider02"></div>
+      <div class="swiper-slide"><img src="images/20220316.264d5a4792251e8fb1edf2276895a1da7914.png" alt="" class="slider03"></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
     
+</div>
+<!-- banner  -->
+<div class="bannerWrap">
+    <div class="banner">
+        <ul class="clearfix">
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
+
 </html>

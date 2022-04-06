@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+@media screen and (min-width:721px) {
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+        min-width: 980px;
+    }
+
+    .logo_wrapper .toggle {
+        display: none;
+    }
+
+    .util_Wrapper {
+        width: 980px;
+        margin: 0 auto;
+    }
+
+    .util {
+        float: right;
+    }
+
+    .util li {
+        float: left;
+        position: relative;
+    }
+
+    .util li:after {
+        content: "";
+        width: 1px;
+        height: 11px;
+        display: block;
+        background: #ccc;
+        position: absolute;
+        top: 10px;
+    }
+
+    .util li:first-child:after {
+        display: none;
+    }
+
+    .util>li>a {
+        display: block;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .wall {
+        height: 1px;
+        background: #ccc;
+    }
+    .logo_Wrapper { width: 980px;margin: 0 auto;
+    padding: 23px;}
+    .logo_Wrapper>h1 {background: url(../images/www.jpg) no-repeat center ;}
+    .logo_Wrapper>h1>a { display: block;text-indent: -9999px;}
+
+
+.nav_Wrapper{ background-color: #721e1e;border-bottom: 3px solid 000}
+.nav_Wrapper>.nav{ margin: 0 auto ;width: 980px;display: flex;justify-content: center;align-items: center;}
+.nav_Wrapper>.nav>li{ float: left;
+   text-align: center;}
+.nav_Wrapper>.nav>li>a { display: block;color: #fff;}
+.nav_Wrapper>.nav>li:after {
+        content: "";
+        width: 1px;
+        height: 14px;
+        display: block;
+        background: #874356;
+        position: absolute;
+        top: 140px;
+    }
+    .nav_Wrapper>.nav>li:first-child:after{display: none}
+.nav_Wrapper>.nav>li>a{
+    display: block;text-align: center;line-height: 45px;color:white;padding:0px 10px;font-size: 14px;
+    
+}
+.nav_Wrapper>.nav>li>a:hover{background-color:#888870;}
+
+.slider01{ background-color:#eae4d4;}
+.slider02 { background-image: url(../images/20211228.53e4d01613c521b5fdb71b5e0fd881515804.jpg);}
+.slider03 { background-image: url(../images/20220316.b78014571441b0816872b13775c248d11969.jpg);}
+
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
