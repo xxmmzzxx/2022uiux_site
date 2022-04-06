@@ -94,11 +94,11 @@
 }
 .icon{
     position: absolute; display: block; text-align: center;
-    bottom: 10px; transition: 0.3s;
+    bottom: 20px; transition: 0.3s;
 }
 .icon img{margin-left: 10px; margin-top: -5px;}
 
-.icon p{color: white; font-size: 16px;margin-bottom: 30px}
+.icon h1{color: white; font-size: 18px;margin-bottom:50px ;margin-left: 85px;}
 
 
 .plus img{
@@ -109,7 +109,7 @@
 .plus:hover img{
     transform:scale(1.1);
 }
-.plus:hover .icon{bottom: 150px;}
+.plus:hover .icon{bottom: 100px;}
 
 .plus .background{
     width: 100%;height: 100%;
@@ -139,6 +139,6 @@
 .plus4:hover .circle{
     transform:translate(-50%,-50%) rotate(90deg);
 }
-
+.swiper { margin-bottom: 20px;}
 
 }
