@@ -8,72 +8,187 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
-        <div class="container">
-           
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-             data-mdb-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>   
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarToggleExternalContent4"
-                    aria-controls="navbarToggleExternalContent4" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Navbar brand -->
+            <a class="navbar-brand ms-5" href="https://mdbgo.com/">
+                <img src="images/logo (1).png" height="" alt=" Logo" loading="lazy" class="logo">
+            </a>
 
-                  </button>
-                            </div>
-                <a class="navbar-nav me-auto" href="#">
-                    <img src="images/img_logo03.png" alt="">
-                </a>
-                <form class="d-flex input-group w-auto">
-                    <input type="search" class="form-control" placeholder="Type query" aria-label="Search" />
-                    <button class="btn btn-outline-secondary" type="button" data-mdb-ripple-color="dark" style=>
-                        <img src="images/ico_header2021.png" alt="">
-                    </button>
-                </form>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <!-- Left links -->
+            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link color1" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collection</a>
+                </li>
+                <!-- Navbar dropdown -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Review</a>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center ">
+                <button type="button" class="btn btn-link px-1 me-2">
+                    <img src="images/head_my.png" alt="">
+                </button>
+                <button type="button" class="btn btn-link px-1  me-2">
+                    <img src="images/head_sch.png" alt="">
+                    </img>
+                </button>
+                <button type="button" class="btn btn-link px-1  me-5">
+                    <img src="images/head_cart.png" alt="">
+                </button>
             </div>
+        </div>
         </div>
     </nav>
-
-    <main>
-        <div id="fullpage">
-            <div class="section page1" data-anchor="m1st">
-                <div class="nextBtn">
-                    <a href="#m2st"><img src="images/btn_scroll.png" alt=""></a>
+    <!-- Container wrapper -->
+    <div id="fullpage">
+        <div class="section page1" data-anchor="m1st">
+            <div class="container-fluid">
+                <div class="row se1 ms-4">
+                    <div class="col-md-9 fw-bold fs-0 text-light">Your own Nuanvce</div>
+                    <div class="col-md-9 fs-5 fw-bold text-light" style="transition-delay: 0.2s;">오로지 나만이 가진 미묘함_뉘앙스
+                    </div>
                 </div>
             </div>
-            <div class="section page2" data-anchor="m2st">
-                <h2 class="text-center"></h2>
+        </div>
+        <div class="section page2" data-anchor="m2st">
+            <div class="container-fluid">
+                <div class="row se2 ms-4">
+                    <div class="col-md-9 fw-bold fs-1 text-dark">Best Seller</div>
+                    <div class="col-md-9 fs-5 fw-bold text-dark" style="transition-delay: 0.2s;">누디크 베스트 셀러 제품
+                    </div>
+                </div>
             </div>
-            <div class="section page3" data-anchor="m3st">
-                <h2 class="text-center"></h2>
-            </div>
-            <div class="section page4" data-anchor="m4st">
-                <h2 class="text-center"></h2>
-            </div>
-            <div class="section page5 fp-auto-height ">
-              
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/05738cbe139999da4b70023bb22174ec.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/f537f7e2413a26a8a6e183a882790c41.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/85078dac3866fe4430a84755ce8a0de8.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/99d8db10f74865949dd1025a73f46a73.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/c1524da4e9513cda230e784644068a6b.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/e987de2c1cade5f78cd7f7b384c531e4.png" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
+        <!-- section 3  -->
+        <div class="section page3" data-anchor="m3st">
+            <div class="container">
+                <div class="d-lg-flex">
+                    <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
+                        <div class="backgroundEffect"></div>
+                        <div class="pic"> <img class="" src="images/825d578b14cc105c5a25976439986266.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="h-1 mt-4">	Recruiting Nudiquers [1차마감]</p>
+                            <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                                <div class="btn btn-secondary">Read More<span class="fas fa-arrow-right"></span></div>
+                                <div class="d-flex align-items-center justify-content-center foot">
+                                    <p class="admin">Admin</p>
+                                    <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
+                        <div class="backgroundEffect"></div>
+                        <div class="pic"> <img class="" src="images/825d578b14cc105c5a25976439986266.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="h-1 mt-4">	Recruiting Nudiquers [1차마감]</p>
+                            <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                                <div class="btn btn-secondary">Read More<span class="fas fa-arrow-right"></span></div>
+                                <div class="d-flex align-items-center justify-content-center foot">
+                                    <p class="admin">Admin</p>
+                                    <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
+                        <div class="backgroundEffect"></div>
+                        <div class="pic"> <img class="" src="images/825d578b14cc105c5a25976439986266.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="h-1 mt-4">	Recruiting Nudiquers [1차마감]</p>
+                            <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                                <div class="btn btn-secondary">Read More<span class="fas fa-arrow-right"></span></div>
+                                <div class="d-flex align-items-center justify-content-center foot">
+                                    <p class="admin">Admin</p>
+                                    <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        </div>
+        <div class="section page4" data-anchor="m4st">
+            <img src="images/ban06.jpg" alt="" ; style="position:relative;left: 80px;top:250px;">
+            <img src="images/ban07.jpg" alt="" ; style="position:absolute;z-index: 1;top:200px ">
+            <img src="images/ban08.jpg" alt="" style="position:absolute;left:1100px;top:350px;">
+        </div>
+        <div class="section page5" data-anchor="m5st">
+            <div class="container text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad explicabo accusantium expedita dicta
+                recusandae illum ex, ipsum facilis ducimus asperiores!
+
+            </div>
+        </div>
+    </div>
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-        <script src="https://use.fontawesome.com/13a40ead47.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="https://use.fontawesome.com/13a40ead47.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/animate.css"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

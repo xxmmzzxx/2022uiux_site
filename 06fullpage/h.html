@@ -1,0 +1,99 @@
+<STYLE TYPE="text/css">
+    <!--
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+    -->
+</STYLE>
+<script language="JavaScript">
+    document.onclick = scrollmenu;
+    document.onmouseup = Click;
+    function Click() {
+        if (event.button == 2) {
+            HideMenu();
+        }
+        /*
+        else if (event.button==1)
+        {
+        scrollmenu();
+        }
+        */
+    }
+    function scrollmenu() {
+        if (window.event.srcElement.className == "") {
+            menu = document.all.leftclick
+            newX = window.event.x + document.body.scrollLeft
+            newY = window.event.y + document.body.scrollTop
+            if (menu.style.display == "") {
+                menu.style.display = "none"
+            }
+            else {
+                menu.style.display = ""
+                menu.style.pixelLeft = newX
+                menu.style.pixelTop = newY
+            }
+        }
+        else { HideMenu(); }
+    }
+    function HideMenu() {
+        if (document.all.leftclick.style.display == "") { document.all.leftclick.style.display = "none" }
+    }
+</script>
+
+<body onScroll="HideMenu();" onResize="HideMenu();">
+    <p style="left:430; top:14;">마우스를 클릭해보세요</p>
+    <table id=leftclick style="display: none; position: absolute; left: 430; top: 14" border="1" width="118"
+        cellspacing="0" bordercolor="silver" height="80" bgcolor="#F6F6F6" bordercolordark="white"
+        bordercolorlight="gray">
+        <tr>
+            <td width="112" align="center" height="31">
+                <a class="change" target="_top" href="http://info.bg.to">
+                    <font size="2" face="굴림">home</font>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="112" align="center" height="31">
+                <a class="change" target="_top" href="http://www.my-biz.co.kr/spboard/board.cgi?id=PHP">
+                    <font size="2" face="굴림">info
+                        게시판</font>
+            </td>
+        </tr>
+        <tr>
+            <td width="112" align="center" height="31">
+                <a class="change" target="_top" href="http://www.my-biz.co.kr/spboard/board.cgi?id=ASP">
+                    <font size="2" face="굴림">info
+                        게시판1</font>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="112" align="center" height="31">
+                <a class="change" target="_top" href="http://www.my-biz.co.kr/spboard/board.cgi?id=JAVA">
+                    <font size="2" face="굴림">info
+                        게시판2</font>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td width="112" align="center" height="31">
+                <a class="change" target="_top" href="http://www.my-biz.co.kr/spboard/board.cgi?id=info4">
+                    <font size="2" face="굴림">info
+                        게시판3</font>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p style="left:430; top:14;"> </p>
+
+</body>
+
+</html>

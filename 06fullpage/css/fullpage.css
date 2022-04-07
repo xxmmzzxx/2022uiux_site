@@ -3,8 +3,8 @@
 .section{
     background-repeat: no-repeat;background-position: center;background-size: cover;
 }
-.section.page1 { background-image: url(../images/PC_1.jpg)}
-.section.page2 { background-image: url(../images/PC_2.jpg);}
-.section.page3 { background-image: url(../images/PC_3.jpg);}
-.section.page4 { background-image: url(../images/PC_4.jpg);}
-.section.page5 { background-image: url(../images/PC_5.jpg);}
+.section.page1 { background-image: url(../images/mv01.jpg)}
+.section.page2 { background: #fff;}
+.section.page3 { background:#fff;}
+.section.page4 { background:#fff;}
+.section.page5 { background-image: url(../images/fourth_mv01.jpg);}
