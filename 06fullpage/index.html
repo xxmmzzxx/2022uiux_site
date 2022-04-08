@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fullpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/fullpage.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-light">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-            <!-- Navbar brand -->
-            <a class="navbar-brand ms-5" href="https://mdbgo.com/">
-                <img src="images/logo (1).png" height="" alt=" Logo" loading="lazy" class="logo">
-            </a>
+    <body>
+        <!-- Navbar -->
+        <nav
+            class="navbar navbar-expand-lg fixed-top bg-light justify-content-center align-items-center">
+            <!-- Container wrapper -->
+            <div class="container-fluid align-items-center">
+                <!-- Navbar brand -->
+                <a class="navbar-brand ms-5" href="https://mdbgo.com/">
+                    <img
+                        src="images/logo (1).png"
+                        height=""
+                        alt=" Logo"
+                        loading="lazy"
+                        class="logo">
+                </a>
 
-            <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
+                <!-- Collapsible wrapper -->
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link color1" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collection</a>
+                    </li>
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Review</a>
+                    </li>
+                </ul>
 
-            <!-- Collapsible wrapper -->
-            <!-- Left links -->
-            <ul class="navbar-nav mb-2 mb-lg-0 ">
-                <li class="nav-item">
-                    <a class="nav-link color1" aria-current="page" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Collection</a>
-                </li>
-                <!-- Navbar dropdown -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Review</a>
-                </li>
-            </ul>
-
-            <div class="d-flex align-items-center ">
-                <button type="button" class="btn btn-link px-1 me-2">
-                    <img src="images/head_my.png" alt="">
-                </button>
-                <button type="button" class="btn btn-link px-1  me-2">
-                    <img src="images/head_sch.png" alt="">
-                    </img>
-                </button>
-                <button type="button" class="btn btn-link px-1  me-5">
-                    <img src="images/head_cart.png" alt="">
-                </button>
+                <div class="d-flex align-items-center ">
+                    <button type="button" class="btn btn-link px-1 me-2">
+                        <img src="images/head_my.png" alt="">
+                    </button>
+                    <button type="button" class="btn btn-link px-1  me-2">
+                        <img src="images/head_sch.png" alt=""></img>
+                    </button>
+                    <button type="button" class="btn btn-link px-1  me-5">
+                        <img src="images/head_cart.png" alt="">
+                    </button>
+                </div>
             </div>
-        </div>
         </div>
     </nav>
     <!-- Container wrapper -->
@@ -91,99 +100,126 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="images/05738cbe139999da4b70023bb22174ec.png" />
+                        <img src="images/05738cbe139999da4b70023bb22174ec.png">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/f537f7e2413a26a8a6e183a882790c41.png" />
+                        <img src="images/f537f7e2413a26a8a6e183a882790c41.png"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/85078dac3866fe4430a84755ce8a0de8.png" />
+                        <img src="images/85078dac3866fe4430a84755ce8a0de8.png"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/99d8db10f74865949dd1025a73f46a73.png" />
+                        <img src="images/99d8db10f74865949dd1025a73f46a73.png"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/c1524da4e9513cda230e784644068a6b.png" />
+                        <img src="images/c1524da4e9513cda230e784644068a6b.png"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/e987de2c1cade5f78cd7f7b384c531e4.png" />
+                        <img src="images/e987de2c1cade5f78cd7f7b384c531e4.png"/>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <!-- section 3  -->
+        <!-- section 3 -->
         <div class="section page3" data-anchor="m3st">
-            <div class="container">
-                <div class="d-lg-flex">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div
+                        class="col-md-6 fw-bold fs-0 text-dark"
+                        style="position: absolute;top: 120px;">Event</div>
+
+                </div>
+                <div class="d-lg-flex justify-content-center align-items-center">
                     <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
                         <div class="backgroundEffect"></div>
-                        <div class="pic"> <img class="" src="images/825d578b14cc105c5a25976439986266.jpg" alt="">
+                        <div class="pic">
+                            <img class="" src="images/825d578b14cc105c5a25976439986266.jpg" alt="">
                         </div>
                         <div class="content">
-                            <p class="h-1 mt-4">	Recruiting Nudiquers [1차마감]</p>
+                            <p class="h-1 mt-4">
+                                Recruiting Nudiquers [1차마감]</p>
                             <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
                                 <div class="btn btn-secondary">Read More<span class="fas fa-arrow-right"></span></div>
                                 <div class="d-flex align-items-center justify-content-center foot">
                                     <p class="admin">Admin</p>
-                                    <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+                                    <p class="ps-3 icon text-muted">
+                                        <span class="fas fa-comment-alt pe-1"></span>3</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
                         <div class="backgroundEffect"></div>
-                        <div class="pic"> <img class="" src="images/f2556eb55d5fc07149586887012270bc.jpg" alt="">
+                        <div class="pic">
+                            <img class="" src="images/f2556eb55d5fc07149586887012270bc.jpg" alt="">
                         </div>
                         <div class="content">
-                            <p class="h-1 mt-4">	Recruiting Nudiquers [1차마감]</p>
+                            <p class="h-1 mt-4">Bluff day event</p>
                             <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
                                 <div class="btn btn-secondary">Read More<span class="fas fa-arrow-right"></span></div>
                                 <div class="d-flex align-items-center justify-content-center foot">
                                     <p class="admin">Admin</p>
-                                    <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+                                    <p class="ps-3 icon text-muted">
+                                        <span class="fas fa-comment-alt pe-1"></span>6</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
                         <div class="backgroundEffect"></div>
-                        <div class="pic"> <img class="" src="images/9eb9effab25dbfb78078c7945dc109e9.jpg" alt="">
+                        <div class="pic">
+                            <img class="" src="images/9eb9effab25dbfb78078c7945dc109e9.jpg" alt="">
                         </div>
                         <div class="content">
-                            <p class="h-1 mt-4">	Recruiting Nudiquers [1차마감]</p>
+                            <p class="h-1 mt-4">
+                                Wadiz Encore Funding Event</p>
                             <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
                                 <div class="btn btn-secondary">Read More<span class="fas fa-arrow-right"></span></div>
                                 <div class="d-flex align-items-center justify-content-center foot">
                                     <p class="admin">Admin</p>
-                                    <p class="ps-3 icon text-muted"><span class="fas fa-comment-alt pe-1"></span>3</p>
+                                    <p class="ps-3 icon text-muted">
+                                        <span class="fas fa-comment-alt pe-1"></span>10</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        
 
         </div>
         <div class="section page4" data-anchor="m4st">
-            <img src="images/ban06.jpg" alt="" ; style="position:relative;left: 80px;top:250px;">
-            <img src="images/ban07.jpg" alt="" ; style="position:absolute;z-index: 1;top:200px ">
-            <img src="images/ban08.jpg" alt="" style="position:absolute;left:1100px;top:350px;">
-        </div>
-        <div class="section page5" data-anchor="m5st">
-            <div class="container text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad explicabo accusantium expedita dicta
-                recusandae illum ex, ipsum facilis ducimus asperiores!
-
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="fs-00 fw-bold text-light">SOON SKIN SHINE PACT</p>
+                        <p class="fs-2 text-center fw-bold text-light">덧바를수록 살아나는 수분광채</p>
+                    </div>
+                </div>
             </div>
+        </div>
+            
+        <div class="section page5" data-anchor="m5st">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img src="images/7ad057ce-474b-43fc-8a20-fe04c7f96586.jpeg" alt="...">
+                    <div class="caption">
+                      <h3>Thumbnail label</h3>
+                      <p>...</p>
+                      <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script src="https://use.fontawesome.com/13a40ead47.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
