@@ -204,14 +204,58 @@ p {
 }
 .fs-00 { font-size: 80px;
     font-style: italic;}
-
-    .cards {
-        transition: all 0.2s ease;
+.fs-000 { font-size: 80px;}
+  
+    .card1 {
+        padding: 30px 40px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+       background: #f06141;
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+    }
+    
+    
+    .form-control-label {
+        margin-bottom: 0
+    }
+    
+    input,
+    textarea,
+    button {
+        padding: 8px 15px;
+        border-radius: 5px !important;
+        margin: 5px 0px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        font-size: 18px !important;
+        font-weight: 300
+    }
+    
+    input:focus,
+    textarea:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: 1px solid #00BCD4;
+        outline-width: 0;
+        font-weight: 400
+    }
+    
+    .btn-block {
+        text-transform: uppercase;
+        font-size: 15px !important;
+        font-weight: 400;
+        height: 43px;
         cursor: pointer
     }
     
-    .cards:hover {
-        box-shadow: 2px 2px 2px 2px #e9ecef;
-        transform: scale(1)
+    .btn-block:hover {
+        color: #f06141 !important
     }
     
+    button:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        outline-width: 0
+    }
