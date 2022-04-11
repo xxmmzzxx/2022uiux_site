@@ -4,4 +4,4 @@
 3. 여행사  https://xxmmzzxx.github.io/2022uiux_site/03travel
 4. spc  https://xxmmzzxx.github.io/2022uiux_site/04company
 
-6.full page https://github.com/xxmmzzxx/2022uiux_site/tree/main/06fullpage
+6.full page https://xxmmzzxx.github.io/2022uiux_site/06fullpage
