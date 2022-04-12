@@ -1,396 +1,773 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/jquery.bxslider.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-    
-    <script src="./js/jquery-3.1.1.min.js"></script>
-    <script src="./js/jquery.bxslider.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/jquery.bxslider.css">
 
-    <style>
-        *{font-family: 'Nanum Gothic', sans-serif;}
-        .topNavWrap{background: #0044AF;}
-        .navTop{
-            width: 1200px;margin:0 auto;
-        
-        display: flex; justify-content:space-between;}
-        .nav ul{display: flex;height: 40px;}
-        .nav li {background: #00163B;margin-right: 2px;}
-        .nav a{display: flex;
-        justify-content: center;align-items: center;height: 100%;
-        padding: 0 20px;font-size: 16px;}
-        .navTop>.nav ul>li>a:hover, .nav ul>li>a:active{background:white; color:#00163B;}
-        .utilMenu ul{display: flex;height:40px;}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="css/colorbox.css">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@300&display=swap"
+            rel="stylesheet">
 
-       .box{display:flex; justify-content: center;align-items: center;  }
-       .box>li{height: 16px;width: 16px; margin-right: 2px;
-        text-align: center; 
-        background: #fff;}
-        .box>li>a{color:#000; margin-left: -2px;text-align: center;}
+        <script src="./js/jquery-3.1.1.min.js"></script>
+        <script src="./js/jquery.bxslider.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/jquery.colorbox-min.js"></script>
 
+        <style>
+            @font-face {
 
-        .utilMenu a{ display: flex;justify-content: center; align-items: center;
-        height: 100%;padding: 0 10px; font-size: 16px;}
-
-        .container{width: 1200px; display: flex;justify-content: space-between;margin: 0 auto;}
-        h1{position: absolute;left:-1000px;}
-        .navf{display: flex;justify-content: center; align-items: center;}
-        .container>nav ul{display: flex;}
-        .container>nav ul li>a{color: #000;margin-right: 50px;line-height: 120px;font-size: 18px;;}
-        .container>img{width:213px;height: 54px;display: block;margin-top:30px;}
-        .titleWrap{display: flex; justify-content: space-between;height: 140px;align-items:center;}
-        .title{color:white;font-size:28px;}
-        .cardbox ul{display: flex;justify-items: center;}
-        .cardbox ul li {padding: 10px;}
-        .cardbox ul li p {display:block;text-align: center;color:white;}
-
-        .header{height: 160px;}
-         section.section{
-        background: skyblue;
-        background-image: url(images/dott.png),url(images/cau.jpg);
-        background-repeat: repeat,no-repeat;
-        background-position: center;
-        background-size:auto,cover;}
-
-
-        .contentWrap>ul>li{float: left; width: 25%;height: 225px;position: relative;}
-        .contentWrap>ul>li:nth-child(1){width: 900px;height: 450px;background: skyblue;}
-        .contentWrap>ul>li:nth-child(2){height: 450px;}
-        .contentWrap>ul>li:nth-child(3){width: 25%;background: #00163B;}
-        .contentWrap>ul>li:nth-child(4){background: rgba(22, 81, 183, 0.9);}
-        .contentWrap>ul>li:nth-child(5){background: #fff;}
-        .contentWrap>ul>li:nth-child(6){background-image: url(images/caucam.png);}
-        .contentWrap>ul>li:nth-child(7){background-image: url(images/caus.png);}
-        .contentWrap>ul>li:nth-child(8){width:75%;background:yellow;}
-
-        .bx-wrapper {
-            -moz-box-shadow: 0 0 0 transparent;
-            -webkit-box-shadow: 0 0 0 transparent;
-            box-shadow: 0 0 0 transparent;
-            border: 0 none;
-            margin-bottom: 0;
-        }
-        .bx-wrapper .bx-pager{
-             bottom: 30px;
-        }
-        
-        .contentWrap>ul>li:nth-child(1) .prev,
-        .contentWrap>ul>li:nth-child(1) .next
-        {position: absolute;top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;}
-       
-        .contentWrap>ul>li:nth-child(1) .next{right: 0;}
-        .contentWrap>ul>li:nth-child(1) .prev{left: 0;}
-        .contentWrap>ul>li:nth-child(2) {
-            font-size: 38px;}
-        .text{ position:absolute;top:20%;left:10%;font-size: 58px;font-weight: bold;color:fff;opacity: 80%;}
-        .t{position: absolute;top:10%;padding: 19px;color: #fff;font-size: 30px;}
-        .t1{position: absolute;top:50%;padding: 19px;font-size: 18px;color:#fff;}
-        .btn1{position: absolute;top:75%;left:5%; width: 170px;height: 40px;background:rgba(0, 0,00, 0.5);
-             border: 1px solid white;color: #fff;font-size: 15px;} 
-        .btn2{position: absolute;top:75%;left:10%; width: 170px;height: 40px;background:#00163B;
-             color: #fff;font-size: 15px;} 
-        .link{font-size: 24px;font-weight: bold;color:#fff;padding:20px;}
-        .hlink{color:#fff;display: flex;justify-content: center;}
-        #hotlink .h3 { display: block;font-size: 24px;color: #fff;padding: 20px;}
-        .hlink li {padding: 11px;}
-        .hlink li p {text-align: center;}
-        #notice {box-sizing: border-box;margin: 20px;}
-        #notice h3 {font-size: 22px;color: #fff;line-height: 50px;
+                font-family: 'Nanum Myeongjo', serif;
+                src: url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
             }
-        #notice ul{ color: #fff;
-            border-top: 2px solid #fff;}
-        #notice ul li{line-height: 35px;;font-size: 14px;}
-        #notice ul li span {float:right;}
-        .news {display: block;font-size: 22px; color:#203355;padding:30px 20px 24px;font-weight:bold;}
-        .campus{display: flex; align-items: center;justify-content: space-between;padding:0px 22px;font-size: 14px;}
-        .sns{float: right;padding: 20px;}
-        .tour{width: 300px;height: 51px;position: absolute;bottom:0;text-align: center;
-            background-color: rgba(0, 0,00, 0.7);font-size:20px;
-            ;}
-        .tour span {color: #fff;position: absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
-        
-       
-        
-        
-      /* footer */
-      .foterWrap{width: 1200px; margin: 0 auto;}
-      .footerWrap .footer1 li{position: relative;}
-      .footerWrap .footer1> li:after{
-          content: "";width: 1px;height: 11px;display: block;background-color: #ccc;position: absolute;bottom:10px;
-        }
-        .footerWrap>ul.footer1>li:first-child:after{
-            content:"";display: none;
-        }
-        .footerWrap .footer1 li a{display: block;color: #727272;line-height:30px;font-size: 14px;padding: 3px 10px;}
-        .wall{height: 1px;background-color: #c4c4c4;}
-        .footer1{
-            display: flex; align-items: center;justify-content: center;
-        }
-        /* p {display: flex;
-            color: #a5a5a5;font-size: 14px;line-height: 20px;padding: 10px;} */
-     
-         
-     
- </style>
+            body {
+                font-family: 'Nanum Gothic', sans-serif;
 
-<script>
-    $(document).ready(function(){
-      var mySlider = $(".slider").bxSlider({
-        controls:false})
-        $(".next").click(function(){
-                mySlider.goToNextSlide()
+            }
+
+            .topNavWrap {
+                background: #0044AF;
+            }
+
+            .navTop {
+                width: 1200px;
+                margin: 0 auto;
+
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .nav ul {
+                display: flex;
+                height: 40px;
+            }
+
+            .nav li {
+                background: #00163B;
+                margin-right: 2px;
+            }
+
+            .nav a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                padding: 0 20px;
+                font-size: 16px;
+            }
+
+            .nav ul > li > a:active,
+            .navTop > .nav ul > li > a:hover {
+                background: white;
+                color: #00163B;
+            }
+
+            .utilMenu ul {
+                display: flex;
+                height: 40px;
+            }
+
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box > li {
+                height: 16px;
+                width: 16px;
+                margin-right: 2px;
+                text-align: center;
+                background: #fff;
+            }
+
+            .box > li > a {
+                color: #000;
+                margin-left: -2px;
+                text-align: center;
+            }
+
+            .utilMenu a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                padding: 0 10px;
+                font-size: 16px;
+            }
+
+            .container {
+                width: 1200px;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+
+            h1 {
+                position: absolute;
+                left: -1000px;
+            }
+
+            .navf {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container > nav ul {
+                display: flex;
+            }
+
+            .container > nav ul li > a {
+                color: #000;
+                margin-right: 50px;
+                line-height: 120px;
+                font-size: 18px;
+            }
+
+            .container > img {
+                width: 213px;
+                height: 54px;
+                display: block;
+                margin-top: 30px;
+            }
+
+            .titleWrap {
+                display: flex;
+                justify-content: space-between;
+                height: 140px;
+                align-items: center;
+            }
+
+            .title {
+                color: white;
+                font-size: 28px;
+            }
+
+            .cardbox ul {
+                display: flex;
+                justify-items: center;
+            }
+
+            .cardbox ul li {
+                padding: 10px;
+            }
+
+            .cardbox ul li p {
+                display: block;
+                text-align: center;
+                color: white;
+            }
+
+            .header {
+                height: 160px;
+            }
+
+            section.section {
+                background: skyblue;
+                background-image: url(images/dott.png), url("images/cau.jpg");
+                background-repeat: repeat, no-repeat;
+                background-position: center;
+                background-size: auto, cover;
+            }
+
+            .contentWrap > ul > li {
+                float: left;
+                width: 25%;
+                height: 225px;
+                position: relative;
+            }
+
+            .contentWrap > ul > li:nth-child(1) {
+                width: 900px;
+                height: 450px;
+                background: skyblue;
+            }
+
+            .contentWrap > ul > li:nth-child(2) {
+                height: 450px;
+            }
+
+            .contentWrap > ul > li:nth-child(3) {
+                width: 25%;
+                background: #00163B;
+            }
+
+            .contentWrap > ul > li:nth-child(4) {
+                background: rgba(22, 81, 183, 0.9);
+            }
+
+            .contentWrap > ul > li:nth-child(5) {
+                background: #fff;
+            }
+
+            .contentWrap > ul > li:nth-child(6) {
+                background-image: url("images/caucam.png");
+            }
+
+            .contentWrap > ul > li:nth-child(7) {
+                background-image: url("images/caus.png");
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contentWrap > ul > li:nth-child(8) {
+                width: 75%;
+                background: yellow;
+            }
+
+            .bx-wrapper {
+                -moz-box-shadow: 0 0 0 transparent;
+                -webkit-box-shadow: 0 0 0 transparent;
+                box-shadow: 0 0 0 transparent;
+                border: 0 none;
+                margin-bottom: 0;
+            }
+
+            .bx-wrapper .bx-pager {
+                bottom: 30px;
+            }
+
+            .contentWrap > ul > li:nth-child(1) .next,
+            .contentWrap > ul > li:nth-child(1) .prev {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+
+            .contentWrap > ul > li:nth-child(1) .next {
+                right: 0;
+            }
+
+            .contentWrap > ul > li:nth-child(1) .prev {
+                left: 0;
+            }
+
+            .contentWrap > ul > li:nth-child(2) {
+                font-size: 38px;
+            }
+
+            .text {
+                position: absolute;
+                font-family: 'Nanum Myeongjo', serif;
+                top: 30%;
+                left: 10%;
+                font-size: 70px;
+                color: #171818;
+                opacity: 100%;
+            }
+
+            .t {
+                position: absolute;
+                top: 10%;
+                padding: 19px;
+                color: #fff;
+                font-size: 30px;
+            }
+
+            .t1 {
+                position: absolute;
+                top: 50%;
+                padding: 19px;
+                font-size: 18px;
+                color: #fff;
+            }
+
+            .btn1 {
+                position: absolute;
+                top: 75%;
+                left: 5%;
+                width: 170px;
+                height: 40px;
+                background: rgba(0, 0, 00, 0.5);
+                border: 1px solid white;
+                color: #fff;
+                font-size: 15px;
+            }
+
+            .btn2 {
+                position: absolute;
+                top: 75%;
+                left: 10%;
+                width: 170px;
+                height: 40px;
+                background: #00163B;
+                color: #fff;
+                font-size: 15px;
+            }
+
+            .link {
+                font-size: 24px;
+                font-weight: bold;
+                color: #fff;
+                padding: 20px;
+            }
+
+            .hlink {
+                color: #fff;
+                display: flex;
+                justify-content: center;
+            }
+
+            #hotlink .h3 {
+                display: block;
+                font-size: 24px;
+                color: #fff;
+                padding: 20px;
+            }
+
+            .hlink li {
+                padding: 11px;
+            }
+
+            .hlink li p {
+                text-align: center;
+            }
+
+            #notice {
+                box-sizing: border-box;
+                margin: 20px;
+            }
+
+            #notice h3 {
+                font-size: 22px;
+                color: #fff;
+                line-height: 50px;
+            }
+
+            #notice ul {
+                color: #fff;
+                border-top: 2px solid #fff;
+            }
+
+            #notice ul li {
+                line-height: 35px;
+                font-size: 14px;
+            }
+
+            #notice ul li span {
+                float: right;
+            }
+
+            .news {
+                display: block;
+                font-size: 22px;
+                color: #203355;
+                padding: 30px 20px 24px;
+                font-weight: bold;
+            }
+
+            .campus {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 22px;
+                font-size: 14px;
+            }
+
+            .sns {
+                float: right;
+                padding: 20px;
+            }
+
+            .tour {
+                width: 300px;
+                height: 51px;
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                background-color: rgba(0, 0, 00, 0.7);
+                font-size: 20px;
+            }
+
+            .tour span {
+                color: #fff;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            /* footer */
+            #footer .footerWrap {
+                width: 1200px;
+                margin: 0 auto;
+                height: 160px;
+            }
+
+            #footer .footerWrap .logo {
+                float: left;
+                margin: 50px 48px;
+            }
+
+            #footer .footerWrap .logotxt {
+                text-indent: -9999px;
+            }
+
+            #footer .footerWrap .footer_a {
+                float: left;
+                padding-top: 28px;
+            }
+
+            #footer .footerWrap .footer_a .footerU {
+                margin-bottom: 13px;
+            }
+
+            #footer .footerWrap .footer_a .footerU li {
+                float: left;
+                font-size: 14px;
+                color: #444444;
+                position: relative;
+                margin-right: 35px;
+            }
+
+            #footer .footerWrap .footer_a .footerU li:after {
+                content: "";
+                width: 1px;
+                height: 12px;
+                background: #6B6B6B;
+                display: block;
+                position: absolute;
+                right: -17px;
+                top: 1px;
+            }
+
+            #footer .footerWrap .footer_a .footerU li:last-child:after {
+                display: none;
+            }
+
+            #footer .footerWrap .footer_a .f_txt {
+                font-size: 13px;
+                color: #929292;
+                line-height: 18px;
+            }
+        </style>
+
+        <script>
+            $(document).ready(function () {
+                var mySlider = $(".slider").bxSlider({controls: false})
+                $(".next").click(function () {
+                    mySlider.goToNextSlide()
+                });
+                $(".prev").click(function () {
+                    mySlider.goToPrevSlide()
+                });
             });
-            $(".prev").click(function(){
-                mySlider.goToPrevSlide()
+            $(document).ready(function () {
+                var mySlider = $(".slider_1").bxSlider({controls: false})
             });
-    });  
-    $(document).ready(function(){
-            var mySlider = $(".slider_1").bxSlider({
-            controls:false})
+
+            $(document).ready(function () {
+                $("youtube").colorbox({iframe: true, innerWidth: 700, innerHeight: 394});
             });
-    
-</script>
+        </script>
 
-</head>
+    </head>
 
-<body>
-    <div class="topNavWrap">
-        <div class="navTop">
-            <div class="nav">
-                <ul>
-                    <li><a href="#">대학교</a></li>
-                    <li><a href="#">입학안내</a></li>
-                    <li><a href="#">대학원</a></li>
-                </ul>
-            </div>
-        
-    
-    <div class="utilMenu">
-        <ul>
-            <li><a href="#">글자크기</a></li>
-                <div class="box">
-                    <li><a href="#" class="m">- </a></li>
-                    <li><a href="#" class="p">+</a></li>
-                </div>
-            <li><a href="#">찾아오시는길</a></li>
-            <li><a href="#">ENGLISH</a></li>
-            <li><a href="#">사이트맵</a></li>
-        </ul>
-    </div>
-    </div>
-</div>
-<div class="container">
-    <h1>중앙대</h1>
-        <img src="images/logo.png" alt="">
-        <nav class="navf">
-            <ul class="nav_1">
-                <li><a href="#">대학소개</a></li>
-                <li><a href="#">학과소개</a></li>
-                <li><a href="#">학사안내</a></li>
-                <li><a href="#">대학생활</a></li>
-                <li><a href="#">학생지원센터</a></li>
-            </ul>
-            <div class="ham">
-                <img src="images/ham.jpg" alt="">
-                <img src="images/ham2.jpg" alt="">
-            </div>
-
- 
-         </nav>
-    </div>
- 
-    
-</h1>
-</div>
-</header>
-<!-- section  -->
-<section class="section">
-    <div class="container titleWrap">
-        <div class="title">
-            <h3>인류사회에 기여하는</h3>
-            <h2> 창의인재, 중앙대학교</h2>
-        </div>
-        <div class="cardbox">           
-            <ul class="card">
-               <li>
-                 <img src="images/1.png" alt="">
-                 <p>입학절차안내</p>
-               </li>
-               <li>
-                 <img src="images/2.png" alt="">
-                 <p>입학설명회</p>
-               </li>
-               <li>
-                 <img src="images/3.png" alt="">
-                 <p>장학제도</p>
-               </li>
-               <li>
-                 <img src="images/4.png" alt="">
-                 <p>증명서발급</p>
-               </li>
-            </ul>
-        </div>
-    </div>
-    <div class="container contentWrap">
-        <ul>
-            <li>
-                <ul class="slider">
-                    <li>
-                        <img src="images/slider1.png" alt="">
-
-                        <div class="text">
-                            인류사회에
-                            <br> 기여하는 
-                            <br>창의인재, 중앙</div>
-                            <button class="btn2">자세히 보기▶</button>
-                    </li>
-                    <li>
-
-                        <img src="images/slider2.png" alt="">
-
-                        <div class="text">
-                            인류사회에
-                            <br> 기여하는 
-                            <br>창의인재, 중앙
-                        </div>
-                        <button class="btn2">자세히 보기▶</button>
-                    </li>
-                    <li>
-
-                        <img src="images/slider3.png" alt="">
-
-                        <div class="text">
-                             인류사회에
-                            <br> 기여하는 
-                            <br>창의인재, 중앙
-                        </div>
-                        <button class="btn2">자세히 보기▶</button>
-                    </li>
-                   
-                </ul>
-               <div class="prev">
-                   <img src="images/btn_left.png" alt="">
-               </div>
-               <div class="next">
-                   <img src="images/btn_right.png" alt="">
-               </div>
-            
-            </li>
-
-
-            <li>
-                <img src="images/library.png" alt="">
-                <p class="t">
-                <strong>APP</strong>으로<br>스마트도서관<br>바로이용하자!</p>
-                <p class="t1">모바일 열람증은<br>
-                    도서관 자료실 . 도서대출 등에<br>
-                    사용 할 수 있습니다.
-                    </p>
-                    <button class="btn1">자세히 보기▶</button>
-
-            </li>
-            
-            <li>
-               <div id="hotlink">
-                <h3 class="h3">HOT LINK</h3>
-                <ul class="hlink">
-                       <li>
-                           <img src="images/monitor.png" alt="">
-                           <p>원격지원
-                            <br>시스템</p>
-                       </li>
-                       <li>
-                           <img src="images/development.png" alt="">
-                           <p>발전기금</p>
-                       </li>
+    <body>
+        <div class="topNavWrap">
+            <div class="navTop">
+                <div class="nav">
+                    <ul>
                         <li>
-                            <img src="images/school.png" alt="">
-                            <p>학사정보</p>
+                            <a href="#">대학교</a>
+                        </li>
+                        <li>
+                            <a href="#">입학안내</a>
+                        </li>
+                        <li>
+                            <a href="#">대학원</a>
                         </li>
                     </ul>
-                </div> 
+                </div>
 
-            </li>
-            
-            <li>
-                <div id="notice">
-                    <h3 class="noti">공지사항</h3>
+                <div class="utilMenu">
                     <ul>
-                        <li><a href="#">[공지]2022 중앙대 신입생...</a><span>2022-02-14</span></li>
-                        <li><a href="#">[공지]AI융합교육 포럼</a><span>2022-02-01</span></li>
-                        <li><a href="#">[공지]2022학년도 장학...</a><span>2022-01-22</span></li>
-                        <li><a href="#">[공지]진로탐색 워크숍</a><span>2022-01-05</span></li>
+                        <li>
+                            <a href="#">글자크기</a>
+                        </li>
+                        <div class="box">
+                            <li>
+                                <a href="#" class="m">-
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="p">+</a>
+                            </li>
+                        </div>
+                        <li>
+                            <a href="#">찾아오시는길</a>
+                        </li>
+                        <li>
+                            <a href="#">ENGLISH</a>
+                        </li>
+                        <li>
+                            <a href="#">사이트맵</a>
+                        </li>
                     </ul>
-                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>중앙대</h1>
+            <img src="images/logo.png" alt="">
+            <nav class="navf">
+                <ul class="nav_1">
+                    <li>
+                        <a href="#">대학소개</a>
+                    </li>
+                    <li>
+                        <a href="#">학과소개</a>
+                    </li>
+                    <li>
+                        <a href="#">학사안내</a>
+                    </li>
+                    <li>
+                        <a href="#">대학생활</a>
+                    </li>
+                    <li>
+                        <a href="#">학생지원센터</a>
+                    </li>
+                </ul>
+                <div class="ham">
+                    <img src="images/ham.jpg" alt="">
+                    <img src="images/ham2.jpg" alt="">
+                </div>
+
+            </nav>
+        </div>
+
+    </h1>
+</div>
+</header>
+<!-- section -->
+<section class="section">
+<div class="container titleWrap">
+    <div class="title">
+        <h3>인류사회에 기여하는</h3>
+        <h2>
+            창의인재, 중앙대학교</h2>
+    </div>
+    <div class="cardbox">
+        <ul class="card">
+            <li>
+                <img src="images/1.png" alt="">
+                <p>입학절차안내</p>
             </li>
             <li>
-                <h3 class="news">SNS NEWS</h3>
-                <div class="campus"> 
-                    <img src="images/campus.png" alt="">
-                    <span>
-                        중앙대학교는<br>
-                        2022학년도 졸업생<br>
-                        학위수여식을 <br>
-                        2월 17일 본교 대신홀<br>
-                        ...
-                    </span>
-                </div>
-                <div class="sns">
-                    <img src="images/facebook.jpg" alt="">
-                    <img src="images/twiiter.jpg" alt="">
-                    <img src="images/google.jpg" alt="">
-                    <img src="images/youtube.jpg" alt="">
-                </div>
-                
+                <img src="images/2.png" alt="">
+                <p>입학설명회</p>
             </li>
             <li>
-                <div class="tour">
-                    <span>캠퍼스 투어</span>
-                </div>
+                <img src="images/3.png" alt="">
+                <p>장학제도</p>
             </li>
             <li>
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jTIqieb-y-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </li>
-            <li>
-                <div class="slider_1">
-                    <img src="images/slider_1.png" alt="">
-                    <img src="images/slider_2.png" alt="">
-                    <img src="images/slider_3.png" alt="">
-                    <img src="images/slider_4.png" alt="">
-                </div>
+                <img src="images/4.png" alt="">
+                <p>증명서발급</p>
             </li>
         </ul>
-        
-   </div>
-  
+    </div>
+</div>
+<div class="container contentWrap">
+    <ul>
+        <li>
+            <ul class="slider">
+                <li>
+                    <img src="images/slider1.png" alt="">
+
+                    <div class="text">
+                        Open<br>
+                        Your Future.
+                    </div>
+                    <button class="btn2">자세히 보기▶</button>
+                </li>
+                <li>
+
+                    <img src="images/slider2.png" alt="">
+
+                    <div class="text">
+                        Open<br>
+                        Your Future.
+                    </div>
+                    <button class="btn2">자세히 보기▶</button>
+                </li>
+                <li>
+
+                    <img src="images/slider3.png" alt="">
+
+                    <div class="text">
+                        Open<br>
+                        Your Future.
+                    </div>
+                    <button class="btn2">자세히 보기▶</button>
+                </li>
+
+            </ul>
+            <div class="prev">
+                <img src="images/btn_left.png" alt="">
+            </div>
+            <div class="next">
+                <img src="images/btn_right.png" alt="">
+            </div>
+
+        </li>
+
+        <li>
+            <img src="images/library.png" alt="">
+            <p class="t">
+                <strong>APP</strong>으로<br>스마트도서관<br>바로이용하자!
+            </p>
+            <p class="t1">모바일 열람증은<br>
+                도서관 자료실 . 도서대출 등에<br>
+                사용 할 수 있습니다.
+            </p>
+            <button class="btn1">자세히 보기▶</button>
+
+        </li>
+
+        <li>
+            <div id="hotlink">
+                <h3 class="h3">HOT LINK</h3>
+                <ul class="hlink">
+                    <li>
+                        <img src="images/monitor.png" alt="">
+                        <p>원격지원
+                            <br>시스템
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/development.png" alt="">
+                        <p>발전기금</p>
+                    </li>
+                    <li>
+                        <img src="images/school.png" alt="">
+                        <p>학사정보</p>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+        <li>
+            <div id="notice">
+                <h3 class="noti">공지사항</h3>
+                <ul>
+                    <li>
+                        <a href="#">[공지]2022 중앙대 신입생...</a>
+                        <span>2022-02-14</span></li>
+                    <li>
+                        <a href="#">[공지]AI융합교육 포럼</a>
+                        <span>2022-02-01</span></li>
+                    <li>
+                        <a href="#">[공지]2022학년도 장학...</a>
+                        <span>2022-01-22</span></li>
+                    <li>
+                        <a href="#">[공지]진로탐색 워크숍</a>
+                        <span>2022-01-05</span></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <h3 class="news">SNS NEWS</h3>
+            <div class="campus">
+                <img src="images/campus.png" alt="">
+                <span>
+                    중앙대학교는<br>
+                    2022학년도 졸업생<br>
+                    학위수여식을
+                    <br>
+                    2월 17일 본교 대신홀<br>
+                    ...
+                </span>
+            </div>
+            <div class="sns">
+                <img src="images/facebook.jpg" alt="">
+                <img src="images/twiiter.jpg" alt="">
+                <img src="images/google.jpg" alt="">
+                <img src="images/youtube.jpg" alt="">
+            </div>
+
+        </li>
+        <li>
+            <div class="tour">
+                <span>캠퍼스 투어</span>
+            </div>
+        </li>
+        <li>
+            <div class="box2">
+                <a href="https://youtu.be/jTIqieb-y-g" class="youtube"><img src="images/play.png" alt=""></div>
+            </a>
+        </li>
+        <li>
+            <div class="slider_1">
+                <img src="images/slider_1.png" alt="">
+                <img src="images/slider_2.png" alt="">
+                <img src="images/slider_3.png" alt="">
+                <img src="images/slider_4.png" alt="">
+            </div>
+        </li>
+    </ul>
+
+</div>
 
 </section>
-    <footer class="footerWrap">
-        <ul class="footer1">
-            <li><a href="#">사이버감사실</a></li>
-            <li><a href="#">이메일수집거부</a></li>
-            <li><a href="#">대학정보공시</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">예결산공고</a></li>
-            <li><a href="#">채용공고</a></li>
-            <div class="wall"></div>
-        </ul>
-       <div class="add">
-             서울캠퍼스 06974 서울특별시 동작구 흑석로 84 TEL.02.820.5114~6114<br>
-            안성캠퍼스 17546 경기도 안성시 대덕면 서동대로 4726 TEL.031.670.3114~4114<br>
-            Copyright 2018 Chung-Ang University All Rights Reserved.
-       
+<!-- footer start -->
+<footer id="footer">
+<div class="footerWrap clearfix">
+    <div class="logo">
+        <img src="./images/logo.png" alt="">
+        <div class="logotxt">
+            <h2>중앙대학교</h2>
+            <h4>UNIVERSITY</h4>
         </div>
+    </div>
+    <div class="footer_a">
+        <ul class="footerU clearfix">
+            <li>개인정보처리방침</li>
+            <li>사이버감사실</li>
+            <li>이메일수집거부</li>
+            <li>윤리강령</li>
+            <li>대학정보공시</li>
+            <li>예결산공고</li>
+            <li>입찰공고</li>
+            <li>채용공고</li>
+        </ul>
+        <div class="f_txt">
+            <p>
+                서울캠퍼스 06974 서울특별시 동작구 흑석로 84 TEL.02.820.5114~6114
+                <br>
+                안성캠퍼스 17546 경기도 안성시 대덕면 서동대로 4726 TEL.031.670.3114~4114
+                <br>
+                Copyright 2018 Chung-Ang University All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</div>
 </footer>
+<!-- footer end -->
 
 </body>
+
 </html>
