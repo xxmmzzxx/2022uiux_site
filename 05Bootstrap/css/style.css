@@ -13,7 +13,7 @@ body{
 
 
 }
-.wrapper h1 {
+.wrapper h2 {
   text-transform: uppercase;
   -webkit-transform: translate(-50%, -50%) skew(-10deg, 0);
   transform: translate(-50%, -50%) skew(-10deg, 0); 
@@ -29,7 +29,7 @@ body{
   z-index: 1;
 
 }
-.wrapper h1::after, .wrapper h1::before {
+.wrapper h2::after, .wrapper h2::before {
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
   -webkit-backface-visibility: hidden;
@@ -37,24 +37,24 @@ body{
   content: attr(data-heading);
   position: absolute;
 }
-.wrapper h1::after {
+.wrapper h2::after {
   left: -15px;
   top:-15px;
   z-index:2;
   -webkit-text-stroke: 3px #cc506a;
   -webkit-text-fill-color: transparent;
 }
-.wrapper h1::before {
+.wrapper h2::before {
   z-index:-1;
   left: 15px;
   top: 15px;
   color: #F68722;
 }
-.wrapper h1:hover::after {
+.wrapper h2:hover::after {
   left: -20px;
   top:-20px;
 }
-.wrapper h1:hover::before {
+.wrapper h2:hover::before {
   left: 20px;
   top: 20px;
 }
